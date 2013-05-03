@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E5046F6173110F800B5F6D9 /* ExerciseTwoDateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5046F4173110F800B5F6D9 /* ExerciseTwoDateList.m */; };
+		5E5046F7173110F800B5F6D9 /* ExerciseTwoDateList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5046F5173110F800B5F6D9 /* ExerciseTwoDateList.xib */; };
+		5E5046FB17311B8D00B5F6D9 /* EditExerciseTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5046F917311B8D00B5F6D9 /* EditExerciseTwo.m */; };
+		5E5046FC17311B8D00B5F6D9 /* EditExerciseTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5046FA17311B8D00B5F6D9 /* EditExerciseTwo.xib */; };
+		5E5D7186172FA623003A8E44 /* ExerciseOneEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D7184172FA623003A8E44 /* ExerciseOneEditController.m */; };
+		5E5D7187172FA623003A8E44 /* ExerciseOneEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D7185172FA623003A8E44 /* ExerciseOneEditController.xib */; };
+		5E5D718B17300E38003A8E44 /* TankefallorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D718917300E38003A8E44 /* TankefallorViewController.m */; };
+		5E5D718C17300E39003A8E44 /* TankefallorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D718A17300E38003A8E44 /* TankefallorViewController.xib */; };
+		5E8F72D2173260A500A7F893 /* popupbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72D1173260A500A7F893 /* popupbg.png */; };
+		5E8F72E7173270E500A7F893 /* Beteend1-100.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DC173270E400A7F893 /* Beteend1-100.html */; };
+		5E8F72E8173270E500A7F893 /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DD173270E400A7F893 /* example.html */; };
+		5E8F72E9173270E500A7F893 /* flykt.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DE173270E400A7F893 /* flykt.html */; };
+		5E8F72EA173270E500A7F893 /* Introduktion.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DF173270E400A7F893 /* Introduktion.html */; };
+		5E8F72EB173270E500A7F893 /* lashorna.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E0173270E400A7F893 /* lashorna.html */; };
+		5E8F72EC173270E500A7F893 /* om.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E1173270E400A7F893 /* om.html */; };
+		5E8F72ED173270E500A7F893 /* strategier.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E2173270E400A7F893 /* strategier.html */; };
+		5E8F72EE173270E500A7F893 /* tanefallor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E3173270E400A7F893 /* tanefallor.html */; };
+		5E8F72EF173270E500A7F893 /* tanke.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E4173270E400A7F893 /* tanke.html */; };
+		5E8F72F0173270E500A7F893 /* tankefallar.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E5173270E400A7F893 /* tankefallar.html */; };
+		5E8F72F1173270E500A7F893 /* Tankefallor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E6173270E500A7F893 /* Tankefallor.html */; };
+		5E8F72F517327FEB00A7F893 /* UtmanaDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F72F317327FEB00A7F893 /* UtmanaDateView.m */; };
+		5E8F72F617327FEB00A7F893 /* UtmanaDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72F417327FEB00A7F893 /* UtmanaDateView.xib */; };
+		5E8F72FA1732932600A7F893 /* EditUtmana.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F72F81732932500A7F893 /* EditUtmana.m */; };
+		5E8F72FB1732932600A7F893 /* EditUtmana.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72F91732932600A7F893 /* EditUtmana.xib */; };
+		5E8F73041732A99C00A7F893 /* BeteendeexperimentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */; };
+		5E8F73051732A99C00A7F893 /* BeteendeexperimentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */; };
+		5EA026AD172E7CD100C37EE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA026AC172E7CD100C37EE4 /* UIKit.framework */; };
+		5EA026AF172E7CD100C37EE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA026AE172E7CD100C37EE4 /* Foundation.framework */; };
+		5EA026B1172E7CD100C37EE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA026B0172E7CD100C37EE4 /* CoreGraphics.framework */; };
+		5EA026B7172E7CD100C37EE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026B5172E7CD100C37EE4 /* InfoPlist.strings */; };
+		5EA026B9172E7CD100C37EE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026B8172E7CD100C37EE4 /* main.m */; };
+		5EA026BD172E7CD100C37EE4 /* Va_lkommenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026BC172E7CD100C37EE4 /* Va_lkommenAppDelegate.m */; };
+		5EA026BF172E7CD100C37EE4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026BE172E7CD100C37EE4 /* Default.png */; };
+		5EA026C1172E7CD100C37EE4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026C0172E7CD100C37EE4 /* Default@2x.png */; };
+		5EA026C3172E7CD100C37EE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026C2172E7CD100C37EE4 /* Default-568h@2x.png */; };
+		5EA026C6172E7CD100C37EE4 /* Va_lkommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026C5172E7CD100C37EE4 /* Va_lkommenViewController.m */; };
+		5EA026C9172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026C7172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib */; };
+		5EA026CC172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026CA172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib */; };
+		5EA026D8172E802700C37EE4 /* MTPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026D3172E802600C37EE4 /* MTPopupWindow.m */; };
+		5EA026D9172E802700C37EE4 /* popupCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D4172E802700C37EE4 /* popupCloseBtn.png */; };
+		5EA026DA172E802700C37EE4 /* popupCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D5172E802700C37EE4 /* popupCloseBtn@2x.png */; };
+		5EA026DB172E802700C37EE4 /* popupWindowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D6172E802700C37EE4 /* popupWindowBack.png */; };
+		5EA026DC172E802700C37EE4 /* popupWindowBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D7172E802700C37EE4 /* popupWindowBack@2x.png */; };
+		5EA026E6172E84DC00C37EE4 /* OveningarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026E4172E84DC00C37EE4 /* OveningarViewController.m */; };
+		5EA026E7172E84DC00C37EE4 /* OveningarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026E5172E84DC00C37EE4 /* OveningarViewController.xib */; };
+		5EA026EB172E8A8B00C37EE4 /* Registreratankar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026E9172E8A8B00C37EE4 /* Registreratankar.m */; };
+		5EA026EC172E8A8B00C37EE4 /* Registreratankar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026EA172E8A8B00C37EE4 /* Registreratankar.xib */; };
+		5EA026F2172E9D7D00C37EE4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA026F1172E9D7D00C37EE4 /* libsqlite3.dylib */; };
+		5EA026F6172EB0F400C37EE4 /* EditExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026F4172EB0F400C37EE4 /* EditExerciseViewController.m */; };
+		5EA026F7172EB0F400C37EE4 /* EditExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026F5172EB0F400C37EE4 /* EditExerciseViewController.xib */; };
+		5EEA724D17316141007F9C37 /* Utmanatankar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA724B17316141007F9C37 /* Utmanatankar.m */; };
+		5EEA724E17316141007F9C37 /* Utmanatankar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA724C17316141007F9C37 /* Utmanatankar.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E5046F3173110F800B5F6D9 /* ExerciseTwoDateList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseTwoDateList.h; path = ../ExerciseTwoDateList.h; sourceTree = "<group>"; };
+		5E5046F4173110F800B5F6D9 /* ExerciseTwoDateList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseTwoDateList.m; path = ../ExerciseTwoDateList.m; sourceTree = "<group>"; };
+		5E5046F5173110F800B5F6D9 /* ExerciseTwoDateList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExerciseTwoDateList.xib; path = ../ExerciseTwoDateList.xib; sourceTree = "<group>"; };
+		5E5046F817311B8D00B5F6D9 /* EditExerciseTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditExerciseTwo.h; path = ../EditExerciseTwo.h; sourceTree = "<group>"; };
+		5E5046F917311B8D00B5F6D9 /* EditExerciseTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditExerciseTwo.m; path = ../EditExerciseTwo.m; sourceTree = "<group>"; };
+		5E5046FA17311B8D00B5F6D9 /* EditExerciseTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditExerciseTwo.xib; path = ../EditExerciseTwo.xib; sourceTree = "<group>"; };
+		5E5D7183172FA623003A8E44 /* ExerciseOneEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseOneEditController.h; path = ../ExerciseOneEditController.h; sourceTree = "<group>"; };
+		5E5D7184172FA623003A8E44 /* ExerciseOneEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseOneEditController.m; path = ../ExerciseOneEditController.m; sourceTree = "<group>"; };
+		5E5D7185172FA623003A8E44 /* ExerciseOneEditController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExerciseOneEditController.xib; path = ../ExerciseOneEditController.xib; sourceTree = "<group>"; };
+		5E5D718817300E38003A8E44 /* TankefallorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TankefallorViewController.h; path = ../TankefallorViewController.h; sourceTree = "<group>"; };
+		5E5D718917300E38003A8E44 /* TankefallorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TankefallorViewController.m; path = ../TankefallorViewController.m; sourceTree = "<group>"; };
+		5E5D718A17300E38003A8E44 /* TankefallorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TankefallorViewController.xib; path = ../TankefallorViewController.xib; sourceTree = "<group>"; };
+		5E8F72D1173260A500A7F893 /* popupbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupbg.png; path = ../../../../Downloads/popupbg.png; sourceTree = "<group>"; };
+		5E8F72D3173268E200A7F893 /* UICheckbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UICheckbox.h; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/UICheckbox.h"; sourceTree = "<group>"; };
+		5E8F72D4173268E200A7F893 /* UICheckbox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UICheckbox.m; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/UICheckbox.m"; sourceTree = "<group>"; };
+		5E8F72D5173268E200A7F893 /* uicheckbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uicheckbox_checked.png; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_checked.png"; sourceTree = "<group>"; };
+		5E8F72D6173268E200A7F893 /* uicheckbox_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uicheckbox_checked@2x.png"; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_checked@2x.png"; sourceTree = "<group>"; };
+		5E8F72D7173268E200A7F893 /* uicheckbox_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uicheckbox_unchecked.png; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_unchecked.png"; sourceTree = "<group>"; };
+		5E8F72D8173268E200A7F893 /* uicheckbox_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uicheckbox_unchecked@2x.png"; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_unchecked@2x.png"; sourceTree = "<group>"; };
+		5E8F72DC173270E400A7F893 /* Beteend1-100.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Beteend1-100.html"; sourceTree = "<group>"; };
+		5E8F72DD173270E400A7F893 /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = example.html; sourceTree = "<group>"; };
+		5E8F72DE173270E400A7F893 /* flykt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = flykt.html; sourceTree = "<group>"; };
+		5E8F72DF173270E400A7F893 /* Introduktion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Introduktion.html; sourceTree = "<group>"; };
+		5E8F72E0173270E400A7F893 /* lashorna.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lashorna.html; sourceTree = "<group>"; };
+		5E8F72E1173270E400A7F893 /* om.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = om.html; sourceTree = "<group>"; };
+		5E8F72E2173270E400A7F893 /* strategier.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = strategier.html; sourceTree = "<group>"; };
+		5E8F72E3173270E400A7F893 /* tanefallor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tanefallor.html; sourceTree = "<group>"; };
+		5E8F72E4173270E400A7F893 /* tanke.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tanke.html; sourceTree = "<group>"; };
+		5E8F72E5173270E400A7F893 /* tankefallar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tankefallar.html; sourceTree = "<group>"; };
+		5E8F72E6173270E500A7F893 /* Tankefallor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Tankefallor.html; sourceTree = "<group>"; };
+		5E8F72F217327FEA00A7F893 /* UtmanaDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtmanaDateView.h; path = ../UtmanaDateView.h; sourceTree = "<group>"; };
+		5E8F72F317327FEB00A7F893 /* UtmanaDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtmanaDateView.m; path = ../UtmanaDateView.m; sourceTree = "<group>"; };
+		5E8F72F417327FEB00A7F893 /* UtmanaDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UtmanaDateView.xib; path = ../UtmanaDateView.xib; sourceTree = "<group>"; };
+		5E8F72F71732932500A7F893 /* EditUtmana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditUtmana.h; path = ../EditUtmana.h; sourceTree = "<group>"; };
+		5E8F72F81732932500A7F893 /* EditUtmana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditUtmana.m; path = ../EditUtmana.m; sourceTree = "<group>"; };
+		5E8F72F91732932600A7F893 /* EditUtmana.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditUtmana.xib; path = ../EditUtmana.xib; sourceTree = "<group>"; };
+		5E8F73011732A99C00A7F893 /* BeteendeexperimentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeteendeexperimentController.h; sourceTree = "<group>"; };
+		5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeteendeexperimentController.m; sourceTree = "<group>"; };
+		5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeteendeexperimentController.xib; sourceTree = "<group>"; };
+		5EA026A9172E7CD100C37EE4 /* Välkommen till TFH-appen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Välkommen till TFH-appen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA026AC172E7CD100C37EE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5EA026AE172E7CD100C37EE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5EA026B0172E7CD100C37EE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5EA026B4172E7CD100C37EE4 /* Välkommen till TFH-appen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Välkommen till TFH-appen-Info.plist"; sourceTree = "<group>"; };
+		5EA026B6172E7CD100C37EE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5EA026B8172E7CD100C37EE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EA026BA172E7CD100C37EE4 /* Välkommen till TFH-appen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Välkommen till TFH-appen-Prefix.pch"; sourceTree = "<group>"; };
+		5EA026BB172E7CD100C37EE4 /* Va_lkommenAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Va_lkommenAppDelegate.h; sourceTree = "<group>"; };
+		5EA026BC172E7CD100C37EE4 /* Va_lkommenAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Va_lkommenAppDelegate.m; sourceTree = "<group>"; };
+		5EA026BE172E7CD100C37EE4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5EA026C0172E7CD100C37EE4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5EA026C2172E7CD100C37EE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5EA026C4172E7CD100C37EE4 /* Va_lkommenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Va_lkommenViewController.h; sourceTree = "<group>"; };
+		5EA026C5172E7CD100C37EE4 /* Va_lkommenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Va_lkommenViewController.m; sourceTree = "<group>"; };
+		5EA026C8172E7CD100C37EE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Va_lkommenViewController_iPhone.xib; sourceTree = "<group>"; };
+		5EA026CB172E7CD100C37EE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Va_lkommenViewController_iPad.xib; sourceTree = "<group>"; };
+		5EA026D2172E802600C37EE4 /* MTPopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTPopupWindow.h; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/MTPopupWindow.h; sourceTree = "<group>"; };
+		5EA026D3172E802600C37EE4 /* MTPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTPopupWindow.m; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/MTPopupWindow.m; sourceTree = "<group>"; };
+		5EA026D4172E802700C37EE4 /* popupCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupCloseBtn.png; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupCloseBtn.png; sourceTree = "<group>"; };
+		5EA026D5172E802700C37EE4 /* popupCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popupCloseBtn@2x.png"; path = "../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupCloseBtn@2x.png"; sourceTree = "<group>"; };
+		5EA026D6172E802700C37EE4 /* popupWindowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupWindowBack.png; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupWindowBack.png; sourceTree = "<group>"; };
+		5EA026D7172E802700C37EE4 /* popupWindowBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popupWindowBack@2x.png"; path = "../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupWindowBack@2x.png"; sourceTree = "<group>"; };
+		5EA026E3172E84DC00C37EE4 /* OveningarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OveningarViewController.h; path = ../OveningarViewController.h; sourceTree = "<group>"; };
+		5EA026E4172E84DC00C37EE4 /* OveningarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OveningarViewController.m; path = ../OveningarViewController.m; sourceTree = "<group>"; };
+		5EA026E5172E84DC00C37EE4 /* OveningarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OveningarViewController.xib; path = ../OveningarViewController.xib; sourceTree = "<group>"; };
+		5EA026E8172E8A8B00C37EE4 /* Registreratankar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Registreratankar.h; path = ../Registreratankar.h; sourceTree = "<group>"; };
+		5EA026E9172E8A8B00C37EE4 /* Registreratankar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Registreratankar.m; path = ../Registreratankar.m; sourceTree = "<group>"; };
+		5EA026EA172E8A8B00C37EE4 /* Registreratankar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Registreratankar.xib; path = ../Registreratankar.xib; sourceTree = "<group>"; };
+		5EA026F1172E9D7D00C37EE4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5EA026F3172EB0F400C37EE4 /* EditExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditExerciseViewController.h; path = ../EditExerciseViewController.h; sourceTree = "<group>"; };
+		5EA026F4172EB0F400C37EE4 /* EditExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditExerciseViewController.m; path = ../EditExerciseViewController.m; sourceTree = "<group>"; };
+		5EA026F5172EB0F400C37EE4 /* EditExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditExerciseViewController.xib; path = ../EditExerciseViewController.xib; sourceTree = "<group>"; };
+		5EEA724A17316141007F9C37 /* Utmanatankar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utmanatankar.h; path = ../Utmanatankar.h; sourceTree = "<group>"; };
+		5EEA724B17316141007F9C37 /* Utmanatankar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utmanatankar.m; path = ../Utmanatankar.m; sourceTree = "<group>"; };
+		5EEA724C17316141007F9C37 /* Utmanatankar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Utmanatankar.xib; path = ../Utmanatankar.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EA026A6172E7CD100C37EE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA026F2172E9D7D00C37EE4 /* libsqlite3.dylib in Frameworks */,
+				5EA026AD172E7CD100C37EE4 /* UIKit.framework in Frameworks */,
+				5EA026AF172E7CD100C37EE4 /* Foundation.framework in Frameworks */,
+				5EA026B1172E7CD100C37EE4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E8F72DB173270E400A7F893 /* THF html files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8F72DC173270E400A7F893 /* Beteend1-100.html */,
+				5E8F72DD173270E400A7F893 /* example.html */,
+				5E8F72DE173270E400A7F893 /* flykt.html */,
+				5E8F72DF173270E400A7F893 /* Introduktion.html */,
+				5E8F72E0173270E400A7F893 /* lashorna.html */,
+				5E8F72E1173270E400A7F893 /* om.html */,
+				5E8F72E2173270E400A7F893 /* strategier.html */,
+				5E8F72E3173270E400A7F893 /* tanefallor.html */,
+				5E8F72E4173270E400A7F893 /* tanke.html */,
+				5E8F72E5173270E400A7F893 /* tankefallar.html */,
+				5E8F72E6173270E500A7F893 /* Tankefallor.html */,
+			);
+			name = "THF html files";
+			path = "../../../../Desktop/THF html files";
+			sourceTree = "<group>";
+		};
+		5EA026A0172E7CD100C37EE4 = {
+			isa = PBXGroup;
+			children = (
+				5E8F73011732A99C00A7F893 /* BeteendeexperimentController.h */,
+				5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */,
+				5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */,
+				5EA026F1172E9D7D00C37EE4 /* libsqlite3.dylib */,
+				5EA026B2172E7CD100C37EE4 /* Välkommen till TFH-appen */,
+				5EA026AB172E7CD100C37EE4 /* Frameworks */,
+				5EA026AA172E7CD100C37EE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EA026AA172E7CD100C37EE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EA026A9172E7CD100C37EE4 /* Välkommen till TFH-appen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA026AB172E7CD100C37EE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EA026AC172E7CD100C37EE4 /* UIKit.framework */,
+				5EA026AE172E7CD100C37EE4 /* Foundation.framework */,
+				5EA026B0172E7CD100C37EE4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EA026B2172E7CD100C37EE4 /* Välkommen till TFH-appen */ = {
+			isa = PBXGroup;
+			children = (
+				5E8F72D3173268E200A7F893 /* UICheckbox.h */,
+				5E8F72D4173268E200A7F893 /* UICheckbox.m */,
+				5EA026BB172E7CD100C37EE4 /* Va_lkommenAppDelegate.h */,
+				5EA026BC172E7CD100C37EE4 /* Va_lkommenAppDelegate.m */,
+				5EA026C4172E7CD100C37EE4 /* Va_lkommenViewController.h */,
+				5EA026C5172E7CD100C37EE4 /* Va_lkommenViewController.m */,
+				5EA026C7172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib */,
+				5EA026CA172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib */,
+				5EA026D2172E802600C37EE4 /* MTPopupWindow.h */,
+				5EA026D3172E802600C37EE4 /* MTPopupWindow.m */,
+				5EA026E3172E84DC00C37EE4 /* OveningarViewController.h */,
+				5EA026E4172E84DC00C37EE4 /* OveningarViewController.m */,
+				5EA026E5172E84DC00C37EE4 /* OveningarViewController.xib */,
+				5EA026E8172E8A8B00C37EE4 /* Registreratankar.h */,
+				5EA026E9172E8A8B00C37EE4 /* Registreratankar.m */,
+				5EA026EA172E8A8B00C37EE4 /* Registreratankar.xib */,
+				5EA026F3172EB0F400C37EE4 /* EditExerciseViewController.h */,
+				5EA026F4172EB0F400C37EE4 /* EditExerciseViewController.m */,
+				5EA026F5172EB0F400C37EE4 /* EditExerciseViewController.xib */,
+				5E5D7183172FA623003A8E44 /* ExerciseOneEditController.h */,
+				5E5D7184172FA623003A8E44 /* ExerciseOneEditController.m */,
+				5E5D7185172FA623003A8E44 /* ExerciseOneEditController.xib */,
+				5E5D718817300E38003A8E44 /* TankefallorViewController.h */,
+				5E5D718917300E38003A8E44 /* TankefallorViewController.m */,
+				5E5D718A17300E38003A8E44 /* TankefallorViewController.xib */,
+				5E5046F3173110F800B5F6D9 /* ExerciseTwoDateList.h */,
+				5E5046F4173110F800B5F6D9 /* ExerciseTwoDateList.m */,
+				5E5046F5173110F800B5F6D9 /* ExerciseTwoDateList.xib */,
+				5E5046F817311B8D00B5F6D9 /* EditExerciseTwo.h */,
+				5E5046F917311B8D00B5F6D9 /* EditExerciseTwo.m */,
+				5E5046FA17311B8D00B5F6D9 /* EditExerciseTwo.xib */,
+				5EEA724A17316141007F9C37 /* Utmanatankar.h */,
+				5EEA724B17316141007F9C37 /* Utmanatankar.m */,
+				5EEA724C17316141007F9C37 /* Utmanatankar.xib */,
+				5E8F72F217327FEA00A7F893 /* UtmanaDateView.h */,
+				5E8F72F317327FEB00A7F893 /* UtmanaDateView.m */,
+				5E8F72F417327FEB00A7F893 /* UtmanaDateView.xib */,
+				5E8F72F71732932500A7F893 /* EditUtmana.h */,
+				5E8F72F81732932500A7F893 /* EditUtmana.m */,
+				5E8F72F91732932600A7F893 /* EditUtmana.xib */,
+				5EA026B3172E7CD100C37EE4 /* Supporting Files */,
+			);
+			path = "Välkommen till TFH-appen";
+			sourceTree = "<group>";
+		};
+		5EA026B3172E7CD100C37EE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8F72DB173270E400A7F893 /* THF html files */,
+				5E8F72D5173268E200A7F893 /* uicheckbox_checked.png */,
+				5E8F72D6173268E200A7F893 /* uicheckbox_checked@2x.png */,
+				5E8F72D7173268E200A7F893 /* uicheckbox_unchecked.png */,
+				5E8F72D8173268E200A7F893 /* uicheckbox_unchecked@2x.png */,
+				5E8F72D1173260A500A7F893 /* popupbg.png */,
+				5EA026D4172E802700C37EE4 /* popupCloseBtn.png */,
+				5EA026D5172E802700C37EE4 /* popupCloseBtn@2x.png */,
+				5EA026D6172E802700C37EE4 /* popupWindowBack.png */,
+				5EA026D7172E802700C37EE4 /* popupWindowBack@2x.png */,
+				5EA026B4172E7CD100C37EE4 /* Välkommen till TFH-appen-Info.plist */,
+				5EA026B5172E7CD100C37EE4 /* InfoPlist.strings */,
+				5EA026B8172E7CD100C37EE4 /* main.m */,
+				5EA026BA172E7CD100C37EE4 /* Välkommen till TFH-appen-Prefix.pch */,
+				5EA026BE172E7CD100C37EE4 /* Default.png */,
+				5EA026C0172E7CD100C37EE4 /* Default@2x.png */,
+				5EA026C2172E7CD100C37EE4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EA026A8172E7CD100C37EE4 /* Välkommen till TFH-appen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA026CF172E7CD100C37EE4 /* Build configuration list for PBXNativeTarget "Välkommen till TFH-appen" */;
+			buildPhases = (
+				5EA026A5172E7CD100C37EE4 /* Sources */,
+				5EA026A6172E7CD100C37EE4 /* Frameworks */,
+				5EA026A7172E7CD100C37EE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Välkommen till TFH-appen";
+			productName = "Välkommen till TFH-appen";
+			productReference = 5EA026A9172E7CD100C37EE4 /* Välkommen till TFH-appen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EA026A1172E7CD100C37EE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "Välkommen";
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = brilliance;
+			};
+			buildConfigurationList = 5EA026A4172E7CD100C37EE4 /* Build configuration list for PBXProject "Välkommen till TFH-appen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5EA026A0172E7CD100C37EE4;
+			productRefGroup = 5EA026AA172E7CD100C37EE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EA026A8172E7CD100C37EE4 /* Välkommen till TFH-appen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EA026A7172E7CD100C37EE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA026B7172E7CD100C37EE4 /* InfoPlist.strings in Resources */,
+				5EA026BF172E7CD100C37EE4 /* Default.png in Resources */,
+				5EA026C1172E7CD100C37EE4 /* Default@2x.png in Resources */,
+				5EA026C3172E7CD100C37EE4 /* Default-568h@2x.png in Resources */,
+				5EA026C9172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib in Resources */,
+				5EA026CC172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib in Resources */,
+				5EA026D9172E802700C37EE4 /* popupCloseBtn.png in Resources */,
+				5EA026DA172E802700C37EE4 /* popupCloseBtn@2x.png in Resources */,
+				5EA026DB172E802700C37EE4 /* popupWindowBack.png in Resources */,
+				5EA026DC172E802700C37EE4 /* popupWindowBack@2x.png in Resources */,
+				5EA026E7172E84DC00C37EE4 /* OveningarViewController.xib in Resources */,
+				5EA026EC172E8A8B00C37EE4 /* Registreratankar.xib in Resources */,
+				5EA026F7172EB0F400C37EE4 /* EditExerciseViewController.xib in Resources */,
+				5E5D7187172FA623003A8E44 /* ExerciseOneEditController.xib in Resources */,
+				5E5D718C17300E39003A8E44 /* TankefallorViewController.xib in Resources */,
+				5E5046F7173110F800B5F6D9 /* ExerciseTwoDateList.xib in Resources */,
+				5E5046FC17311B8D00B5F6D9 /* EditExerciseTwo.xib in Resources */,
+				5EEA724E17316141007F9C37 /* Utmanatankar.xib in Resources */,
+				5E8F72D2173260A500A7F893 /* popupbg.png in Resources */,
+				5E8F72E7173270E500A7F893 /* Beteend1-100.html in Resources */,
+				5E8F72E8173270E500A7F893 /* example.html in Resources */,
+				5E8F72E9173270E500A7F893 /* flykt.html in Resources */,
+				5E8F72EA173270E500A7F893 /* Introduktion.html in Resources */,
+				5E8F72EB173270E500A7F893 /* lashorna.html in Resources */,
+				5E8F72EC173270E500A7F893 /* om.html in Resources */,
+				5E8F72ED173270E500A7F893 /* strategier.html in Resources */,
+				5E8F72EE173270E500A7F893 /* tanefallor.html in Resources */,
+				5E8F72EF173270E500A7F893 /* tanke.html in Resources */,
+				5E8F72F0173270E500A7F893 /* tankefallar.html in Resources */,
+				5E8F72F1173270E500A7F893 /* Tankefallor.html in Resources */,
+				5E8F72F617327FEB00A7F893 /* UtmanaDateView.xib in Resources */,
+				5E8F72FB1732932600A7F893 /* EditUtmana.xib in Resources */,
+				5E8F73051732A99C00A7F893 /* BeteendeexperimentController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EA026A5172E7CD100C37EE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA026B9172E7CD100C37EE4 /* main.m in Sources */,
+				5EA026BD172E7CD100C37EE4 /* Va_lkommenAppDelegate.m in Sources */,
+				5EA026C6172E7CD100C37EE4 /* Va_lkommenViewController.m in Sources */,
+				5EA026D8172E802700C37EE4 /* MTPopupWindow.m in Sources */,
+				5EA026E6172E84DC00C37EE4 /* OveningarViewController.m in Sources */,
+				5EA026EB172E8A8B00C37EE4 /* Registreratankar.m in Sources */,
+				5EA026F6172EB0F400C37EE4 /* EditExerciseViewController.m in Sources */,
+				5E5D7186172FA623003A8E44 /* ExerciseOneEditController.m in Sources */,
+				5E5D718B17300E38003A8E44 /* TankefallorViewController.m in Sources */,
+				5E5046F6173110F800B5F6D9 /* ExerciseTwoDateList.m in Sources */,
+				5E5046FB17311B8D00B5F6D9 /* EditExerciseTwo.m in Sources */,
+				5EEA724D17316141007F9C37 /* Utmanatankar.m in Sources */,
+				5E8F72F517327FEB00A7F893 /* UtmanaDateView.m in Sources */,
+				5E8F72FA1732932600A7F893 /* EditUtmana.m in Sources */,
+				5E8F73041732A99C00A7F893 /* BeteendeexperimentController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5EA026B5172E7CD100C37EE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA026B6172E7CD100C37EE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5EA026C7172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA026C8172E7CD100C37EE4 /* en */,
+			);
+			name = Va_lkommenViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		5EA026CA172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EA026CB172E7CD100C37EE4 /* en */,
+			);
+			name = Va_lkommenViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EA026CD172E7CD100C37EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EA026CE172E7CD100C37EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EA026D0172E7CD100C37EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Välkommen till TFH-appen/Välkommen till TFH-appen-Prefix.pch";
+				INFOPLIST_FILE = "Välkommen till TFH-appen/Välkommen till TFH-appen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5EA026D1172E7CD100C37EE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Välkommen till TFH-appen/Välkommen till TFH-appen-Prefix.pch";
+				INFOPLIST_FILE = "Välkommen till TFH-appen/Välkommen till TFH-appen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EA026A4172E7CD100C37EE4 /* Build configuration list for PBXProject "Välkommen till TFH-appen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA026CD172E7CD100C37EE4 /* Debug */,
+				5EA026CE172E7CD100C37EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA026CF172E7CD100C37EE4 /* Build configuration list for PBXNativeTarget "Välkommen till TFH-appen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA026D0172E7CD100C37EE4 /* Debug */,
+				5EA026D1172E7CD100C37EE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EA026A1172E7CD100C37EE4 /* Project object */;
+}
