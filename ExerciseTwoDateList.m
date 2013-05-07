@@ -39,11 +39,11 @@
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exercise2DB.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
     const char *dbpath = [databasePath UTF8String];
     sqlite3_stmt    *statement;
     
-    if (sqlite3_open(dbpath, &exercise2DB) == SQLITE_OK)
+    if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
     {
         NSString *querySQL = [NSString stringWithFormat:
                               @"SELECT date FROM EXERCISETWO"
@@ -51,7 +51,7 @@
         
         const char *query_stmt = [querySQL UTF8String];
         
-        if (sqlite3_prepare_v2(exercise2DB,
+        if (sqlite3_prepare_v2(exerciseDB,
                                query_stmt, -1, &statement, NULL) == SQLITE_OK)
         {
             while (sqlite3_step(statement) == SQLITE_ROW) {
@@ -66,7 +66,7 @@
             }
             sqlite3_finalize(statement);
         }
-        sqlite3_close(exercise2DB);
+        sqlite3_close(exerciseDB);
     }
     [self.tableView reloadData];
     // Do any additional setup after loading the view from its nib.

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <sqlite3.h>
 @interface Interoceptivexponering : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
  UITableView *tblView;
@@ -19,8 +19,9 @@
     IBOutlet UIView *pupview;
      IBOutlet UIView *timerview;
     IBOutlet UIButton *cb1,*cb2,*cb3,*cb4,*cb5,*cb6,*cb7,*cb8,*cb9,*cb10;
- 
-}
+    sqlite3 *exerciseDB;
+    NSString        *databasePath;
+   }
 //-(IBAction)switchStateChanged:(id)sender;
 @property (nonatomic, retain)IBOutlet UILabel *prc;
 @property (nonatomic, retain)IBOutlet UILabel *ovning;
@@ -38,5 +39,6 @@
 - (IBAction)closetimer:(id)sender;
 - (IBAction)starttimer:(id)sender;
 - (IBAction)stoptimer:(id)sender;
+-(IBAction)selectedcheckbox:(id)sender;
 - (IBAction)pausetimer:(id)sender;
 @end

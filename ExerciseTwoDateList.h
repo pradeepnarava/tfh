@@ -12,7 +12,7 @@
 @interface ExerciseTwoDateList : UIViewController<UITableViewDelegate, UITableViewDataSource>{
     UITableView *tableView;
     NSMutableArray *listexercise2;
-    sqlite3 *exercise2DB;
+    sqlite3 *exerciseDB;
     NSString *databasePath;
     EditExerciseTwo *eet;
 }

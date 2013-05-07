@@ -150,7 +150,7 @@
 								</dictionary>
 								<dictionary>
 									<reference key="NSFont" ref="729781331"/>
-									<object class="NSParagraphStyle" key="NSParagraphStyle" id="228206859">
+									<object class="NSParagraphStyle" key="NSParagraphStyle" id="16009699">
 										<double key="NSParagraphSpacing">10</double>
 										<double key="NSTailIndent">432</double>
 										<double key="NSDefaultTabInterval">36</double>
@@ -370,7 +370,7 @@
 									<string key="NSString">1. Hur troligtär det att det värsta hander? Välj sannolikhet.</string>
 									<dictionary key="NSAttributes" id="138578336">
 										<reference key="NSFont" ref="201830144"/>
-										<reference key="NSParagraphStyle" ref="228206859"/>
+										<reference key="NSParagraphStyle" ref="16009699"/>
 									</dictionary>
 								</object>
 								<nil key="IBUIHighlightedColor"/>
@@ -391,6 +391,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentHorizontalAlignment">0</int>
 								<int key="IBUIContentVerticalAlignment">0</int>
+								<float key="IBUIValue">45</float>
 								<float key="IBUIMaxValue">100</float>
 							</object>
 							<object class="IBUILabel" id="917670526">
@@ -858,6 +859,14 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">slider</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="946165917"/>
+					</object>
+					<int key="connectionID">166</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="546577171"/>
 						<reference key="destination" ref="372490531"/>
@@ -895,6 +904,15 @@
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">162</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">chSlider:</string>
+						<reference key="source" ref="946165917"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">13</int>
+					</object>
+					<int key="connectionID">165</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -3489,7 +3507,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">164</int>
+			<int key="maxID">166</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3497,12 +3515,22 @@
 					<string key="className">EditUtmana</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="chSlider:">id</string>
 						<string key="deletebutton:">id</string>
+						<string key="sharebutton:">id</string>
 						<string key="updatebutton:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="chSlider:">
+							<string key="name">chSlider:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 						<object class="IBActionInfo" key="deletebutton:">
 							<string key="name">deletebutton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="sharebutton:">
+							<string key="name">sharebutton:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="updatebutton:">
@@ -3517,6 +3545,7 @@
 						<string key="c4">UITextView</string>
 						<string key="c5">UITextView</string>
 						<string key="c6">UITextView</string>
+						<string key="slider">UISlider</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="c1">
@@ -3542,6 +3571,10 @@
 						<object class="IBToOneOutletInfo" key="c6">
 							<string key="name">c6</string>
 							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="slider">
+							<string key="name">slider</string>
+							<string key="candidateClassName">UISlider</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">

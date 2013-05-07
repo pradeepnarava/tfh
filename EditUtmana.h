@@ -14,6 +14,7 @@
     NSString *databasePath;
     UITextView *c1,*c2,*c4,*c5,*c6;
     UILabel *c3;
+       IBOutlet UISlider *slider;
 }
 
 @property(nonatomic, retain)NSString *datefrome3;
@@ -25,4 +26,5 @@
 @property(nonatomic, retain)IBOutlet UILabel *c3;
 -(IBAction)updatebutton:(id)sender;
 -(IBAction)deletebutton:(id)sender;
+-(IBAction)chSlider:(id)sender ;
 @end

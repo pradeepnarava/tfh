@@ -126,19 +126,17 @@
     sqlite3_stmt    *statement;
     if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
         /*NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE3 SET  negative=%@,dina=%@, hur=%@, motbevis=%@, tankefalla=%@,alternativ=%@ WHERE date=%@",c1.text,c2.text, c3.text,c4.text, c5.text,c6.text,datefrome3];*/
-        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE3 SET  negative=%@,dina=%@, hur=%@, motbevis=%@, tankefalla=%@,alternativ=%@ WHERE date=%@",c1.text,c2.text, c3.text,c4.text, c5.text,c6.text,datefrome3];
+        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE3 SET  negative='%@',dina='%@', hur='%@', motbevis='%@', tankefalla='%@',alternativ='%@' WHERE date='%@'",c1.text,c2.text, c3.text,c4.text, c5.text,c6.text,datefrome3];
         
         
         const char *del_stmt = [query UTF8String];
         
-      if (sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL)== SQLITE_ROW){
-        
-      NSLog(@"sss");
-            
-            
-        }else{
-            
+        if (sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL)==SQLITE_OK){
+            if(SQLITE_DONE != sqlite3_step(statement))
+                NSLog(@"Error while updating. %s", sqlite3_errmsg(exerciseDB));
+            NSLog(@"sss");
         }
+        
         
         
         sqlite3_finalize(statement);
@@ -191,6 +189,13 @@
         
     }
 }
+-(IBAction)chSlider:(id)sender {
+    
+    NSString *str= [[NSString alloc] initWithFormat:@"%d%@", (int)slider.value,@"%"];
+    self.c3.text=str;
+    NSLog(@"%@",str);
+}
+
 -(IBAction)sharebutton:(id)sender{
     
 }

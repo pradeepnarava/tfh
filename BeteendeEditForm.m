@@ -13,7 +13,7 @@
 @end
 
 @implementation BeteendeEditForm
-@synthesize selected_date,Eex4c1,Eex4c2,Eex4c3,Eex4c4,Eex4c5,pmCC;
+@synthesize selected_date,Eex4c1,Eex4c2,Eex4c3,Eex4c4,Eex4c5,pmCC,slabel2,slabel1;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -83,22 +83,35 @@
                 Eex4c3.text = [NSString stringWithUTF8String:c3];
                 NSLog(@"value form db :%@",Eex4c3.text );
                           }
-            
             char* c4 = (char*) sqlite3_column_text(statement,5);
+            
+            if (c4!= NULL){
+                slabel1.text = [NSString stringWithUTF8String:c4];
+                NSLog(@"value form db :%@",slabel1.text );
+                slabel1.text=@"30%";
+            }
+            char* c5 = (char*) sqlite3_column_text(statement,6);
           
-            if (c4 != NULL){
-                Eex4c4.text = [NSString stringWithUTF8String:c4];
+            if (c5 != NULL){
+                Eex4c4.text = [NSString stringWithUTF8String:c5];
                 NSLog(@"value form db :%@",Eex4c4.text );
                
             }
-            char* c5 = (char*) sqlite3_column_text(statement,6);
+            char* c6 = (char*) sqlite3_column_text(statement,7);
             
-            if (c5 != NULL){
-                Eex4c5.text = [NSString stringWithUTF8String:c5];
+            if (c6 != NULL){
+                Eex4c5.text = [NSString stringWithUTF8String:c6];
                 NSLog(@"value form db :%@",Eex4c5.text );
                 
             }
+            char* c7 = (char*) sqlite3_column_text(statement,8);
             
+            if (c7 != NULL){
+                NSString *str = [NSString stringWithUTF8String:c7];
+                NSLog(@"value form db :%@",str);
+                slabel2.text=@"36%";
+                
+            }
         }
         
         sqlite3_finalize(statement);
@@ -115,10 +128,12 @@
    // date,datum,experimentet,forutsage,resultat,lardomar
     sqlite3_stmt    *statement;
     if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
-        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE4 SET  datum=%@,experimentet=%@, forutsage=%@, resultat=%@,lardomar=%@ WHERE date='%@';",Eex4c1.text,Eex4c2.text, Eex4c3.text,Eex4c4.text, Eex4c5.text, selected_date];
+        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE4 SET  datum='%@',experimentet='%@', forutsage='%@',forutprc='%@', resultat='%@',lardomar='%@' ,lardprc='%@' WHERE date='%@'",Eex4c1.text,Eex4c2.text, Eex4c3.text,slabel1.text, Eex4c4.text, Eex4c5.text,slabel2.text, selected_date];
         const char *del_stmt = [query UTF8String];
         
         if (sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL)==SQLITE_OK);{
+            if(SQLITE_DONE != sqlite3_step(statement))
+                NSLog(@"Error while updating. %s", sqlite3_errmsg(exerciseDB));
             NSLog(@"sss");
         }
         

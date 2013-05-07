@@ -74,7 +74,7 @@
         if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
         {
             char *errMsg;
-            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISE4 (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT,  DATUM TEXT ,EXPERIMENTET TEXT,FORUTSAGE TEXT, RESULTAT TEXT,LARDOMAR TEXT)";
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISE4 (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT,  DATUM TEXT ,EXPERIMENTET TEXT,FORUTSAGE TEXT,FORUTPRC TEXT, RESULTAT TEXT,LARDOMAR TEXT,LARDPRC TEXT)";
             
             if (sqlite3_exec(exerciseDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
@@ -144,13 +144,15 @@
     
     if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
     {
-        NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO EXERCISEONE (date,datum,experimentet,forutsage,resultat,lardomar) VALUES (\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\",\"%@\")", str, ex3c1.text,ex3c2.text, ex3c3.text , ex3c4.text,ex3c5];
+        NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO EXERCISE4 (date,datum,experimentet,forutsage,forutprc,resultat,lardomar,lardprc) VALUES (\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\",\"%@\",\"%@\",\"%@\")", str, ex3c1.text,ex3c2.text, ex3c3.text , slabel1.text, ex3c4.text,ex3c5.text,slabel2.text];
         
         const char *insert_stmt = [insertSQL UTF8String];
         
+             
         sqlite3_prepare_v2(exerciseDB, insert_stmt, -1, &statement, NULL);
         if (sqlite3_step(statement) == SQLITE_DONE)
         {
+            
             
             ex3c1.text=@"";
              ex3c2.text=@""; ex3c3.text=@""; ex3c4.text=@""; ex3c5.text=@"";

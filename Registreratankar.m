@@ -81,7 +81,7 @@
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
-    if ([filemgr fileExistsAtPath: databasePath ] == NO)
+    if ([filemgr fileExistsAtPath: databasePath ] == YES)
     {
 		const char *dbpath = [databasePath UTF8String];
         

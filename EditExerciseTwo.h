@@ -35,7 +35,7 @@
     UITextView *EtikeC1;
     UITextView *EtikeC2;
     
-    sqlite3 *exercise2DB;
+    sqlite3 *exerciseDB;
     NSString *databasePath;
 }
 

@@ -47,16 +47,16 @@
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exercise2DB.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
     // const char *dbpath = [databasePath UTF8String];
     sqlite3_stmt    *statement;
-    if (sqlite3_open([databasePath UTF8String], &exercise2DB) == SQLITE_OK) {
+    if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
         
         NSString *sql = [NSString stringWithFormat: @"SELECT * FROM EXERCISETWO WHERE date='%@'", select_date];
         
         const char *del_stmt = [sql UTF8String];
         
-        sqlite3_prepare_v2(exercise2DB, del_stmt, -1, & statement, NULL);
+        sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL);
         while (sqlite3_step(statement) == SQLITE_ROW) {
             
             char* c1 = (char*) sqlite3_column_text(statement,2);
@@ -229,7 +229,7 @@
         }
         
         sqlite3_finalize(statement);
-        sqlite3_close(exercise2DB);
+        sqlite3_close(exerciseDB);
         
         
     }
@@ -244,13 +244,14 @@
     NSLog(@"%@",select_date);
    // NSString *xc=@"xxxxxxxx";
     sqlite3_stmt    *statement;
-    if (sqlite3_open([databasePath UTF8String], &exercise2DB) == SQLITE_OK) {
+    if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
         
-        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISETWO SET stagc1=%@,stagc2=%@, overc1=%@, overc2=%@,tankec1=%@,tankec2=%@, perc1=%@, perc2=%@,diskc1=%@,diskc2=%@, forc1=%@, forc2=%@,katac1=%@,katac2=%@, allc1=%@, allc2=%@,pliktc1=%@,pliktc2=%@, selektc1=%@, selektc2=%@,kanslc1=%@,kanslc2=%@, etikec1=%@, etikec2=%@  WHERE date='%@';",StagC1.text,StagC2.text, overC1.text,overC2.text,TankeC1.text,TankeC2.text,PerC1.text,PerC2.text,DiskC1.text,DiskC2.text,ForC1.text,ForC2.text,KataC1.text,KataC2.text,AllC1.text,AllC2.text,PliktC1.text,PliktC2.text,SelektC1.text,SelektC2.text,KanslC1.text,KanslC2.text,EtikeC1.text,EtikeC2.text, select_date];
+        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISETWO SET stagc1='%@',stagc2='%@', overc1='%@', overc2='%@',tankec1='%@',tankec2='%@', perc1='%@', perc2='%@',diskc1='%@',diskc2='%@', forc1='%@', forc2='%@',katac1='%@',katac2='%@', allc1='%@', allc2='%@',pliktc1='%@',pliktc2='%@', selektc1='%@', selektc2='%@',kanslc1='%@',kanslc2='%@', etikec1='%@', etikec2='%@'  WHERE date='%@'",StagC1.text,StagC2.text, overC1.text,overC2.text,TankeC1.text,TankeC2.text,PerC1.text,PerC2.text,DiskC1.text,DiskC2.text,ForC1.text,ForC2.text,KataC1.text,KataC2.text,AllC1.text,AllC2.text,PliktC1.text,PliktC2.text,SelektC1.text,SelektC2.text,KanslC1.text,KanslC2.text,EtikeC1.text,EtikeC2.text, select_date];
         const char *del_stmt = [query UTF8String];
         
-        if (sqlite3_prepare_v2(exercise2DB, del_stmt, -1, & statement, NULL)==SQLITE_OK);{
-           
+        if (sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL)==SQLITE_OK);{
+            if(SQLITE_DONE != sqlite3_step(statement))
+                NSLog(@"Error while updating. %s", sqlite3_errmsg(exerciseDB));
                 NSLog(@"sss");
                 StagC1.text = @"";
                 StagC2.text  = @"";
@@ -282,7 +283,7 @@
         
         
         sqlite3_finalize(statement);
-        sqlite3_close(exercise2DB);
+        sqlite3_close(exerciseDB);
         
         
     }
@@ -302,20 +303,20 @@
     
     if (buttonIndex == 1) {
         sqlite3_stmt    *statement;
-        if (sqlite3_open([databasePath UTF8String], &exercise2DB) == SQLITE_OK) {
+        if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
             
             NSString *sql = [NSString stringWithFormat: @"DELETE FROM EXERCISETWO WHERE date='%@'", select_date];
             
             const char *del_stmt = [sql UTF8String];
             
-            sqlite3_prepare_v2(exercise2DB, del_stmt, -1, & statement, NULL);
+            sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL);
             if (sqlite3_step(statement) == SQLITE_ROW) {
                 
                 NSLog(@"sss");
             }
             
             sqlite3_finalize(statement);
-            sqlite3_close(exercise2DB);
+            sqlite3_close(exerciseDB);
             
             
         }

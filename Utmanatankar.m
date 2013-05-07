@@ -187,6 +187,9 @@ NSArray *pArray;
         
         sqlite3_prepare_v2(exerciseDB, insert_stmt, -1, &statement, NULL);
         if (sqlite3_step(statement) == SQLITE_DONE)
+
+            
+
         {
             c1.text=@"";
             c2.text=@"";
