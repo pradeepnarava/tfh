@@ -14,7 +14,7 @@
 @end
 
 @implementation EditExerciseViewController
-@synthesize listexercise1,Selectedrow,eoec,tableView;
+@synthesize listexercise1,Selectedrow,tableView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -117,19 +117,11 @@
     NSLog(@"%@",SelectedDate);
     Selectedrow=SelectedDate;
     NSLog(@"Selectedrow%@",Selectedrow);
-    //eoec=[[ExerciseOneEditController alloc]initWithNibName:@"ExerciseOneEditController" bundle:[NSBundle mainBundle]];
-   
-    
-    
-   if(self.eoec == nil) {
-        ExerciseOneEditController *viewController = [[ExerciseOneEditController alloc] initWithNibName:@"ExerciseOneEditController" bundle:[NSBundle mainBundle]];
-        self.eoec = viewController;
-        [viewController release];
-    }
-    eoec.selectedate=[[NSString alloc]init];
+    eoec=[[ExerciseOneEditController alloc]init];
+          eoec.selectedate=[[NSString alloc]init];
     eoec.selectedate=SelectedDate;
     NSLog(@"zzzz%@",eoec.selectedate);
-    [self.navigationController pushViewController:self.eoec animated:YES];
+    [self.navigationController pushViewController:eoec animated:YES];
 
       /* UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Alert message" message:@"Please Enter the text above fields"
                                     delegate:self
@@ -174,7 +166,8 @@
 
         }
         else{
-                                    }
+            
+        }
    
 }
 

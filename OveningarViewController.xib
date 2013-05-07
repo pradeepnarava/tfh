@@ -464,6 +464,24 @@
 					</object>
 					<int key="connectionID">216</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">exercise5:</string>
+						<reference key="source" ref="814236506"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">218</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">exercise6:</string>
+						<reference key="source" ref="229030186"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">217</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -2014,7 +2032,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">216</int>
+			<int key="maxID">218</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2034,6 +2052,8 @@
 						<string key="exercise2:">id</string>
 						<string key="exercise3:">id</string>
 						<string key="exercise4:">id</string>
+						<string key="exercise5:">id</string>
+						<string key="exercise6:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="exercise1:">
@@ -2050,6 +2070,14 @@
 						</object>
 						<object class="IBActionInfo" key="exercise4:">
 							<string key="name">exercise4:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="exercise5:">
+							<string key="name">exercise5:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="exercise6:">
+							<string key="name">exercise6:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>

@@ -12,7 +12,7 @@
 @interface UtmanaDateView : UIViewController<UITableViewDelegate, UITableViewDataSource>{
     UITableView *tableView;
     NSMutableArray *listexercise3;
-    sqlite3 *exercise3DB;
+    sqlite3 *exerciseDB;
     NSString *databasePath;
     EditUtmana *eu;
 }

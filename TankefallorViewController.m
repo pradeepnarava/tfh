@@ -51,27 +51,27 @@
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exercise2DB.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
-    if ([filemgr fileExistsAtPath: databasePath ] == NO)
+    if ([filemgr fileExistsAtPath: databasePath ] == YES)
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &exercise2DB) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
         {
     
             char *errMsg;
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISETWO (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT,  STAGC1 TEXT ,STAGC2 TEXT,OVERC1 TEXT,OVERC2 TEXT,TANKEC1 TEXT,TANKEC2 TEXT,PERC1 TEXT,PERC2 TEXT,DISKC1 TEXT,DISKC2 TEXT, FORC1 TEXT,FORC2 TEXT,KATAC1 TEXT, KATAC2 TEXT,ALLC1 TEXT,ALLC2 TEXT,PLIKTC1 TEXT,PLIKTC2 TEXT,SELEKTC1 TEXT, SELEKTC2 TEXT,KANSLC1 TEXT,KANSLC2 TEXT,ETIKEC1 TEXT,ETIKEC2 TEXT)";
             
-            if (sqlite3_exec(exercise2DB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            if (sqlite3_exec(exerciseDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 NSLog(@"Failed to create database");
             }else{
                 NSLog(@" create database");
             }
             
-            sqlite3_close(exercise2DB);
+            sqlite3_close(exerciseDB);
             
         } else {
             //status.text = @"Failed to open/create database";
@@ -109,13 +109,13 @@
     
     const char *dbpath = [databasePath UTF8String];
     
-    if (sqlite3_open(dbpath, &exercise2DB) == SQLITE_OK)
+    if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
     {
              NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO EXERCISETWO (date,stagc1,stagc2,overc1,overc2,tankec1,tankec2,perc1,perc2,diskc1,diskc2,forc1,forc2,katac1,katac2,allc1,allc2,pliktc1,pliktc2,selektc1,selektc2,kanslc1,kanslc2,etikec1,etikec2) VALUES (\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\")", str, StagC1.text,StagC2.text,StagC1.text,overC2.text,TankeC1.text,TankeC2.text,PerC1.text,PerC2.text,DiskC1.text,DiskC2.text,ForC1.text,ForC2.text,KataC1.text,KataC2.text,AllC1.text,AllC2.text,PliktC1.text,PliktC2.text,SelektC1.text,SelektC2.text,KanslC1.text,KanslC2.text,EtikeC1.text,EtikeC2.text];
         					
         const char *insert_stmt = [insertSQL UTF8String];
         
-        sqlite3_prepare_v2(exercise2DB, insert_stmt, -1, &statement, NULL);
+        sqlite3_prepare_v2(exerciseDB, insert_stmt, -1, &statement, NULL);
         if (sqlite3_step(statement) == SQLITE_DONE)
         {
             
@@ -149,7 +149,7 @@
             NSLog(@"no");
         }
         sqlite3_finalize(statement);
-        sqlite3_close(exercise2DB);
+        sqlite3_close(exerciseDB);
     }
     
 

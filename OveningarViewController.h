@@ -11,14 +11,20 @@
 #import "TankefallorViewController.h"
 #import "Utmanatankar.h"
 #import "BeteendeexperimentController.h"
+#import "Beteendeaktivering.h"
+#import "Interoceptivexponering.h"
 @interface OveningarViewController : UIViewController{
     Registreratankar *rt;
     TankefallorViewController *tfvc;
     Utmanatankar *ut;
     BeteendeexperimentController *bec;
+    Beteendeaktivering *ba;
+    Interoceptivexponering *ice;
 }
 -(IBAction)exercise1:(id)sender;
 -(IBAction)exercise2:(id)sender;
 -(IBAction)exercise3:(id)sender;
 -(IBAction)exercise4:(id)sender;
+-(IBAction)exercise5:(id)sender;
+-(IBAction)exercise6:(id)sender;
 @end

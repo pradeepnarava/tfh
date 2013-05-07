@@ -38,9 +38,9 @@
    
     self.navigationItem.title=@"Registrera tankar";
     eevc=[[EditExerciseViewController alloc]initWithNibName:@"EditExerciseViewController" bundle:nil];
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
+    UIBarButtonItem *bButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
-    self.navigationItem.backBarButtonItem = backButton;
+    self.navigationItem.backBarButtonItem = bButton;
     
     
     label.userInteractionEnabled = YES;

@@ -34,7 +34,7 @@
     self.navigationItem.title=@"Edit Form";
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Dela"
-                                                                    style:UIBarButtonItemStylePlain target:nil action:@selector(sharebutton:)];
+                                                                   style:UIBarButtonItemStylePlain target:nil action:@selector(sharebutton:)];
     self.navigationItem.rightBarButtonItem = rightButton;
     NSString *docsDir;
     NSArray *dirPaths;
@@ -46,7 +46,7 @@
     
     // Build the path to the database file
     databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
-   // const char *dbpath = [databasePath UTF8String];
+    // const char *dbpath = [databasePath UTF8String];
     sqlite3_stmt    *statement;
     if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
         
@@ -70,7 +70,7 @@
                 tmp2 = [NSString stringWithUTF8String:c2];
                 NSLog(@"value form db :%@",tmp2);
                 situation.text=tmp2;
-                           }
+            }
             
             char* c3 = (char*) sqlite3_column_text(statement,4);
             NSString *tmp3;
@@ -95,18 +95,19 @@
         
         
     }
-    
+
 
     // Do any additional setup after loading the view from its nib.
 }
 
+
 -(IBAction)sharebutton:(id)sender{
-    
+   
 }
 -(IBAction)updatebutton:(id)sender{
     sqlite3_stmt    *statement;
     if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
-    NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISEONE SET  negative=%@,situation=%@, beteenden=%@, overiga=%@ WHERE date='%@';",negative.text,situation.text, beteenden.text,overiga.text, selectedate];
+        NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISEONE SET negative='%@', situation='%@' , beteenden='%@', overiga='%@' WHERE date='%@' ",negative.text,situation.text, beteenden.text,overiga.text, selectedate];
         const char *del_stmt = [query UTF8String];
        
         if (sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL)==SQLITE_OK);{

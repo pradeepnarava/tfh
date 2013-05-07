@@ -21,5 +21,5 @@
 
 @property(nonatomic,retain)NSMutableArray *listexercise1;
 @property(nonatomic,retain) NSString *Selectedrow;
-@property(nonatomic,retain) ExerciseOneEditController *eoec;
+
 @end

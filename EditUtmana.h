@@ -10,7 +10,7 @@
 #import <sqlite3.h>
 @interface EditUtmana : UIViewController{
     NSString *datefrome3;
-    sqlite3 *exercise3DB;
+    sqlite3 *exerciseDB;
     NSString *databasePath;
     UITextView *c1,*c2,*c4,*c5,*c6;
     UILabel *c3;

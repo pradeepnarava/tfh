@@ -47,16 +47,16 @@
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exercise3DB.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
     // const char *dbpath = [databasePath UTF8String];
     sqlite3_stmt    *statement;
-    if (sqlite3_open([databasePath UTF8String], &exercise3DB) == SQLITE_OK) {
+    if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
         
         NSString *sql = [NSString stringWithFormat: @"SELECT * FROM EXERCISE3 WHERE date='%@'", datefrome3];
         
         const char *del_stmt = [sql UTF8String];
         
-        sqlite3_prepare_v2(exercise3DB, del_stmt, -1, & statement, NULL);
+        sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL);
         while (sqlite3_step(statement) == SQLITE_ROW) {
             
             char* ch1 = (char*) sqlite3_column_text(statement,2);
@@ -109,7 +109,7 @@
         }
         
         sqlite3_finalize(statement);
-        sqlite3_close(exercise3DB);
+        sqlite3_close(exerciseDB);
         
         
     }
@@ -124,14 +124,14 @@
     NSLog(@"%@",datefrome3);
   
     sqlite3_stmt    *statement;
-    if (sqlite3_open([databasePath UTF8String], &exercise3DB) == SQLITE_OK) {
+    if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
         /*NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE3 SET  negative=%@,dina=%@, hur=%@, motbevis=%@, tankefalla=%@,alternativ=%@ WHERE date=%@",c1.text,c2.text, c3.text,c4.text, c5.text,c6.text,datefrome3];*/
         NSString *query=[NSString stringWithFormat:@"UPDATE EXERCISE3 SET  negative=%@,dina=%@, hur=%@, motbevis=%@, tankefalla=%@,alternativ=%@ WHERE date=%@",c1.text,c2.text, c3.text,c4.text, c5.text,c6.text,datefrome3];
         
         
         const char *del_stmt = [query UTF8String];
         
-      if (sqlite3_prepare_v2(exercise3DB, del_stmt, -1, & statement, NULL)== SQLITE_ROW){
+      if (sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL)== SQLITE_ROW){
         
       NSLog(@"sss");
             
@@ -142,7 +142,7 @@
         
         
         sqlite3_finalize(statement);
-        sqlite3_close(exercise3DB);
+        sqlite3_close(exerciseDB);
         
         
     }
@@ -162,20 +162,20 @@
     
     if (buttonIndex == 1) {
         sqlite3_stmt    *statement;
-        if (sqlite3_open([databasePath UTF8String], &exercise3DB) == SQLITE_OK) {
+        if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
             
             NSString *sql = [NSString stringWithFormat: @"DELETE FROM EXERCISE3 WHERE date='%@'", datefrome3];
             
             const char *del_stmt = [sql UTF8String];
             
-            sqlite3_prepare_v2(exercise3DB, del_stmt, -1, & statement, NULL);
+            sqlite3_prepare_v2(exerciseDB, del_stmt, -1, & statement, NULL);
             if (sqlite3_step(statement) == SQLITE_ROW) {
                 
                 NSLog(@"sss");
             }
             
             sqlite3_finalize(statement);
-            sqlite3_close(exercise3DB);
+            sqlite3_close(exerciseDB);
             
             
         }

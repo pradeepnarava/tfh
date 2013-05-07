@@ -31,6 +31,8 @@
     tfvc=[[TankefallorViewController alloc]initWithNibName:@"TankefallorViewController" bundle:nil];
     ut=[[Utmanatankar alloc]initWithNibName:@"Utmanatankar" bundle:nil];
     bec=[[BeteendeexperimentController alloc]initWithNibName:@"BeteendeexperimentController" bundle:nil];
+    ba=[[Beteendeaktivering alloc]initWithNibName:@"Beteendeaktivering" bundle:nil];
+    ice=[[Interoceptivexponering alloc]initWithNibName:@"Interoceptivexponering" bundle:nil];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
@@ -53,5 +55,11 @@
 }
 -(IBAction)exercise4:(id)sender{
     [self.navigationController pushViewController:bec animated:YES];
+}
+-(IBAction)exercise5:(id)sender{
+    [self.navigationController pushViewController:ice animated:YES];
+}
+-(IBAction)exercise6:(id)sender{
+    [self.navigationController pushViewController:ba animated:YES];
 }
 @end

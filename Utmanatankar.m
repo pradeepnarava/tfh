@@ -89,25 +89,25 @@ NSArray *pArray;
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exercise3DB.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     
-    if ([filemgr fileExistsAtPath: databasePath ] == NO)
+    if ([filemgr fileExistsAtPath: databasePath ] == YES)
     {
 		const char *dbpath = [databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &exercise3DB) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
         {
             char *errMsg;
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISE3 (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT,  NEGATIVE TEXT ,DINA TEXT,HUR TEXT, MOTBEVIS TEXT,TANKEFALLA TEXT,ALTERNATIV TEXT)";
             
-            if (sqlite3_exec(exercise3DB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            if (sqlite3_exec(exerciseDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
                 NSLog(@"Failed to create database");
             }
             
-            sqlite3_close(exercise3DB);
+            sqlite3_close(exerciseDB);
             
         } else {
             //status.text = @"Failed to open/create database";
@@ -179,13 +179,13 @@ NSArray *pArray;
     
     const char *dbpath = [databasePath UTF8String];
     
-    if (sqlite3_open(dbpath, &exercise3DB) == SQLITE_OK)
+    if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
     {
         NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO EXERCISE3 (date,negative,dina,hur,motbevis,tankefalla,alternativ) VALUES (\"%@\", \"%@\", \"%@\" ,\"%@\",\"%@\",\"%@\",\"%@\")", str1, c1.text,c2.text, c3.text ,c4.text,c5.text,c6.text];
         
         const char *insert_stmt = [insertSQL UTF8String];
         
-        sqlite3_prepare_v2(exercise3DB, insert_stmt, -1, &statement, NULL);
+        sqlite3_prepare_v2(exerciseDB, insert_stmt, -1, &statement, NULL);
         if (sqlite3_step(statement) == SQLITE_DONE)
         {
             c1.text=@"";
@@ -200,7 +200,7 @@ NSArray *pArray;
             NSLog(@"no");
         }
         sqlite3_finalize(statement);
-        sqlite3_close(exercise3DB);
+        sqlite3_close(exerciseDB);
     }
     
 

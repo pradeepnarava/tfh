@@ -11,7 +11,7 @@
 #import "ExerciseTwoDateList.h"
 @interface TankefallorViewController : UIViewController{
     
-    sqlite3 *exercise2DB;
+    sqlite3 *exerciseDB;
     NSString *databasePath;
     ExerciseTwoDateList *etdl;
     UILabel *label;

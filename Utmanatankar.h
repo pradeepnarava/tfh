@@ -13,7 +13,7 @@
     UILabel *label,*label2,*strategier,*negative,*din,*motavis,*tanke,*alltanke;
     UITextView *c1,*c2,*c4,*c5,*c6;
     UILabel *c3;
-    sqlite3 *exercise3DB;
+    sqlite3 *exerciseDB;
     NSString *databasePath;
      IBOutlet UISlider *slider;
     UtmanaDateView *udv;

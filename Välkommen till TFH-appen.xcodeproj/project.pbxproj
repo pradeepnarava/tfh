@@ -7,26 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E068CAE1733BCDD006FF428 /* BeteendeDateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CAC1733BCDD006FF428 /* BeteendeDateList.m */; };
+		5E068CAF1733BCDE006FF428 /* BeteendeDateList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E068CAD1733BCDD006FF428 /* BeteendeDateList.xib */; };
+		5E068CCD1733C881006FF428 /* BeteendeEditForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CCB1733C880006FF428 /* BeteendeEditForm.m */; };
+		5E068CCE1733C881006FF428 /* BeteendeEditForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E068CCC1733C881006FF428 /* BeteendeEditForm.xib */; };
+		5E068CEB1733E561006FF428 /* Beteendeaktivering.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CE91733E561006FF428 /* Beteendeaktivering.m */; };
+		5E068CEC1733E561006FF428 /* Beteendeaktivering.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E068CEA1733E561006FF428 /* Beteendeaktivering.xib */; };
+		5E068CF01733E9A2006FF428 /* Registreringsvecka.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CEE1733E9A1006FF428 /* Registreringsvecka.m */; };
+		5E068CF11733E9A2006FF428 /* Registreringsvecka.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E068CEF1733E9A1006FF428 /* Registreringsvecka.xib */; };
+		5E068CF51733EE1B006FF428 /* Plusvecka.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CF31733EE1A006FF428 /* Plusvecka.m */; };
+		5E068CF61733EE1B006FF428 /* Plusvecka.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E068CF41733EE1A006FF428 /* Plusvecka.xib */; };
+		5E068CFA1733F217006FF428 /* Utvardering.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E068CF81733F216006FF428 /* Utvardering.m */; };
+		5E068CFB1733F217006FF428 /* Utvardering.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E068CF91733F217006FF428 /* Utvardering.xib */; };
 		5E5046F6173110F800B5F6D9 /* ExerciseTwoDateList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5046F4173110F800B5F6D9 /* ExerciseTwoDateList.m */; };
 		5E5046F7173110F800B5F6D9 /* ExerciseTwoDateList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5046F5173110F800B5F6D9 /* ExerciseTwoDateList.xib */; };
 		5E5046FB17311B8D00B5F6D9 /* EditExerciseTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5046F917311B8D00B5F6D9 /* EditExerciseTwo.m */; };
 		5E5046FC17311B8D00B5F6D9 /* EditExerciseTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5046FA17311B8D00B5F6D9 /* EditExerciseTwo.xib */; };
+		5E51A29E1737898B002259C5 /* Veckostatistik.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51A29C1737898B002259C5 /* Veckostatistik.m */; };
+		5E51A29F1737898B002259C5 /* Veckostatistik.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E51A29D1737898B002259C5 /* Veckostatistik.xib */; };
 		5E5D7186172FA623003A8E44 /* ExerciseOneEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D7184172FA623003A8E44 /* ExerciseOneEditController.m */; };
 		5E5D7187172FA623003A8E44 /* ExerciseOneEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D7185172FA623003A8E44 /* ExerciseOneEditController.xib */; };
 		5E5D718B17300E38003A8E44 /* TankefallorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5D718917300E38003A8E44 /* TankefallorViewController.m */; };
 		5E5D718C17300E39003A8E44 /* TankefallorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D718A17300E38003A8E44 /* TankefallorViewController.xib */; };
 		5E8F72D2173260A500A7F893 /* popupbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72D1173260A500A7F893 /* popupbg.png */; };
-		5E8F72E7173270E500A7F893 /* Beteend1-100.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DC173270E400A7F893 /* Beteend1-100.html */; };
-		5E8F72E8173270E500A7F893 /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DD173270E400A7F893 /* example.html */; };
-		5E8F72E9173270E500A7F893 /* flykt.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DE173270E400A7F893 /* flykt.html */; };
-		5E8F72EA173270E500A7F893 /* Introduktion.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72DF173270E400A7F893 /* Introduktion.html */; };
-		5E8F72EB173270E500A7F893 /* lashorna.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E0173270E400A7F893 /* lashorna.html */; };
-		5E8F72EC173270E500A7F893 /* om.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E1173270E400A7F893 /* om.html */; };
-		5E8F72ED173270E500A7F893 /* strategier.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E2173270E400A7F893 /* strategier.html */; };
-		5E8F72EE173270E500A7F893 /* tanefallor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E3173270E400A7F893 /* tanefallor.html */; };
-		5E8F72EF173270E500A7F893 /* tanke.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E4173270E400A7F893 /* tanke.html */; };
-		5E8F72F0173270E500A7F893 /* tankefallar.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E5173270E400A7F893 /* tankefallar.html */; };
-		5E8F72F1173270E500A7F893 /* Tankefallor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72E6173270E500A7F893 /* Tankefallor.html */; };
 		5E8F72F517327FEB00A7F893 /* UtmanaDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F72F317327FEB00A7F893 /* UtmanaDateView.m */; };
 		5E8F72F617327FEB00A7F893 /* UtmanaDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F72F417327FEB00A7F893 /* UtmanaDateView.xib */; };
 		5E8F72FA1732932600A7F893 /* EditUtmana.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F72F81732932500A7F893 /* EditUtmana.m */; };
@@ -45,7 +48,6 @@
 		5EA026C6172E7CD100C37EE4 /* Va_lkommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026C5172E7CD100C37EE4 /* Va_lkommenViewController.m */; };
 		5EA026C9172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026C7172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib */; };
 		5EA026CC172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026CA172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib */; };
-		5EA026D8172E802700C37EE4 /* MTPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026D3172E802600C37EE4 /* MTPopupWindow.m */; };
 		5EA026D9172E802700C37EE4 /* popupCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D4172E802700C37EE4 /* popupCloseBtn.png */; };
 		5EA026DA172E802700C37EE4 /* popupCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D5172E802700C37EE4 /* popupCloseBtn@2x.png */; };
 		5EA026DB172E802700C37EE4 /* popupWindowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026D6172E802700C37EE4 /* popupWindowBack.png */; };
@@ -59,15 +61,61 @@
 		5EA026F7172EB0F400C37EE4 /* EditExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026F5172EB0F400C37EE4 /* EditExerciseViewController.xib */; };
 		5EEA724D17316141007F9C37 /* Utmanatankar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA724B17316141007F9C37 /* Utmanatankar.m */; };
 		5EEA724E17316141007F9C37 /* Utmanatankar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA724C17316141007F9C37 /* Utmanatankar.xib */; };
+		5EEFD16F1737BD21001E0E25 /* Interoceptivexponering.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFD16D1737BD21001E0E25 /* Interoceptivexponering.m */; };
+		5EEFD1701737BD21001E0E25 /* Interoceptivexponering.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFD16E1737BD21001E0E25 /* Interoceptivexponering.xib */; };
+		5EEFD1731737E2EB001E0E25 /* popupwindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFD1721737E2EB001E0E25 /* popupwindow.m */; };
+		5EF0E29A173406C80016A59D /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E298173406C80016A59D /* check.png */; };
+		5EF0E29B173406C80016A59D /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E299173406C80016A59D /* uncheck.png */; };
+		5EF0E2A9173409A90016A59D /* Beteend1-100.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E29D173409A90016A59D /* Beteend1-100.html */; };
+		5EF0E2AA173409A90016A59D /* Beteendeaktivering.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E29E173409A90016A59D /* Beteendeaktivering.html */; };
+		5EF0E2AB173409A90016A59D /* example.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E29F173409A90016A59D /* example.html */; };
+		5EF0E2AC173409A90016A59D /* flykt.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A0173409A90016A59D /* flykt.html */; };
+		5EF0E2AD173409A90016A59D /* Introduktion.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A1173409A90016A59D /* Introduktion.html */; };
+		5EF0E2AE173409A90016A59D /* lashorna.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A2173409A90016A59D /* lashorna.html */; };
+		5EF0E2AF173409A90016A59D /* om.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A3173409A90016A59D /* om.html */; };
+		5EF0E2B0173409A90016A59D /* strategier.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A4173409A90016A59D /* strategier.html */; };
+		5EF0E2B1173409A90016A59D /* tanefallor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A5173409A90016A59D /* tanefallor.html */; };
+		5EF0E2B2173409A90016A59D /* tanke.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A6173409A90016A59D /* tanke.html */; };
+		5EF0E2B3173409A90016A59D /* tankefallar.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A7173409A90016A59D /* tankefallar.html */; };
+		5EF0E2B4173409A90016A59D /* Tankefallor.html in Resources */ = {isa = PBXBuildFile; fileRef = 5EF0E2A8173409A90016A59D /* Tankefallor.html */; };
+		5EF0E2C817340F540016A59D /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2B917340F540016A59D /* NSDate+Helpers.m */; };
+		5EF0E2C917340F540016A59D /* PMCalendarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2BB17340F540016A59D /* PMCalendarBackgroundView.m */; };
+		5EF0E2CA17340F540016A59D /* PMCalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2BE17340F540016A59D /* PMCalendarController.m */; };
+		5EF0E2CB17340F540016A59D /* PMCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2C117340F540016A59D /* PMCalendarView.m */; };
+		5EF0E2CC17340F540016A59D /* PMDimmingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2C317340F540016A59D /* PMDimmingView.m */; };
+		5EF0E2CD17340F540016A59D /* PMPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2C517340F540016A59D /* PMPeriod.m */; };
+		5EF0E2CE17340F540016A59D /* PMSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2C717340F540016A59D /* PMSelectionView.m */; };
+		5EF0E2D3173410450016A59D /* MTPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF0E2D2173410450016A59D /* MTPopupWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E068CAB1733BCDD006FF428 /* BeteendeDateList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeteendeDateList.h; path = ../BeteendeDateList.h; sourceTree = "<group>"; };
+		5E068CAC1733BCDD006FF428 /* BeteendeDateList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeteendeDateList.m; path = ../BeteendeDateList.m; sourceTree = "<group>"; };
+		5E068CAD1733BCDD006FF428 /* BeteendeDateList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BeteendeDateList.xib; path = ../BeteendeDateList.xib; sourceTree = "<group>"; };
+		5E068CCA1733C880006FF428 /* BeteendeEditForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeteendeEditForm.h; path = ../BeteendeEditForm.h; sourceTree = "<group>"; };
+		5E068CCB1733C880006FF428 /* BeteendeEditForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeteendeEditForm.m; path = ../BeteendeEditForm.m; sourceTree = "<group>"; };
+		5E068CCC1733C881006FF428 /* BeteendeEditForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BeteendeEditForm.xib; path = ../BeteendeEditForm.xib; sourceTree = "<group>"; };
+		5E068CE81733E561006FF428 /* Beteendeaktivering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beteendeaktivering.h; sourceTree = "<group>"; };
+		5E068CE91733E561006FF428 /* Beteendeaktivering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beteendeaktivering.m; sourceTree = "<group>"; };
+		5E068CEA1733E561006FF428 /* Beteendeaktivering.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Beteendeaktivering.xib; sourceTree = "<group>"; };
+		5E068CED1733E9A1006FF428 /* Registreringsvecka.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registreringsvecka.h; sourceTree = "<group>"; };
+		5E068CEE1733E9A1006FF428 /* Registreringsvecka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registreringsvecka.m; sourceTree = "<group>"; };
+		5E068CEF1733E9A1006FF428 /* Registreringsvecka.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Registreringsvecka.xib; sourceTree = "<group>"; };
+		5E068CF21733EE1A006FF428 /* Plusvecka.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plusvecka.h; sourceTree = "<group>"; };
+		5E068CF31733EE1A006FF428 /* Plusvecka.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plusvecka.m; sourceTree = "<group>"; };
+		5E068CF41733EE1A006FF428 /* Plusvecka.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Plusvecka.xib; sourceTree = "<group>"; };
+		5E068CF71733F216006FF428 /* Utvardering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utvardering.h; sourceTree = "<group>"; };
+		5E068CF81733F216006FF428 /* Utvardering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utvardering.m; sourceTree = "<group>"; };
+		5E068CF91733F217006FF428 /* Utvardering.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Utvardering.xib; sourceTree = "<group>"; };
 		5E5046F3173110F800B5F6D9 /* ExerciseTwoDateList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseTwoDateList.h; path = ../ExerciseTwoDateList.h; sourceTree = "<group>"; };
 		5E5046F4173110F800B5F6D9 /* ExerciseTwoDateList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseTwoDateList.m; path = ../ExerciseTwoDateList.m; sourceTree = "<group>"; };
 		5E5046F5173110F800B5F6D9 /* ExerciseTwoDateList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExerciseTwoDateList.xib; path = ../ExerciseTwoDateList.xib; sourceTree = "<group>"; };
 		5E5046F817311B8D00B5F6D9 /* EditExerciseTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditExerciseTwo.h; path = ../EditExerciseTwo.h; sourceTree = "<group>"; };
 		5E5046F917311B8D00B5F6D9 /* EditExerciseTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditExerciseTwo.m; path = ../EditExerciseTwo.m; sourceTree = "<group>"; };
 		5E5046FA17311B8D00B5F6D9 /* EditExerciseTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditExerciseTwo.xib; path = ../EditExerciseTwo.xib; sourceTree = "<group>"; };
+		5E51A29B1737898B002259C5 /* Veckostatistik.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veckostatistik.h; sourceTree = "<group>"; };
+		5E51A29C1737898B002259C5 /* Veckostatistik.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Veckostatistik.m; sourceTree = "<group>"; };
+		5E51A29D1737898B002259C5 /* Veckostatistik.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Veckostatistik.xib; sourceTree = "<group>"; };
 		5E5D7183172FA623003A8E44 /* ExerciseOneEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseOneEditController.h; path = ../ExerciseOneEditController.h; sourceTree = "<group>"; };
 		5E5D7184172FA623003A8E44 /* ExerciseOneEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseOneEditController.m; path = ../ExerciseOneEditController.m; sourceTree = "<group>"; };
 		5E5D7185172FA623003A8E44 /* ExerciseOneEditController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExerciseOneEditController.xib; path = ../ExerciseOneEditController.xib; sourceTree = "<group>"; };
@@ -81,26 +129,15 @@
 		5E8F72D6173268E200A7F893 /* uicheckbox_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uicheckbox_checked@2x.png"; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_checked@2x.png"; sourceTree = "<group>"; };
 		5E8F72D7173268E200A7F893 /* uicheckbox_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uicheckbox_unchecked.png; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_unchecked.png"; sourceTree = "<group>"; };
 		5E8F72D8173268E200A7F893 /* uicheckbox_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "uicheckbox_unchecked@2x.png"; path = "../../../../Downloads/UICheckbox-master/SampleCheckbox/SampleCheckbox/UICheckbox/uicheckbox_unchecked@2x.png"; sourceTree = "<group>"; };
-		5E8F72DC173270E400A7F893 /* Beteend1-100.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Beteend1-100.html"; sourceTree = "<group>"; };
-		5E8F72DD173270E400A7F893 /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = example.html; sourceTree = "<group>"; };
-		5E8F72DE173270E400A7F893 /* flykt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = flykt.html; sourceTree = "<group>"; };
-		5E8F72DF173270E400A7F893 /* Introduktion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Introduktion.html; sourceTree = "<group>"; };
-		5E8F72E0173270E400A7F893 /* lashorna.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lashorna.html; sourceTree = "<group>"; };
-		5E8F72E1173270E400A7F893 /* om.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = om.html; sourceTree = "<group>"; };
-		5E8F72E2173270E400A7F893 /* strategier.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = strategier.html; sourceTree = "<group>"; };
-		5E8F72E3173270E400A7F893 /* tanefallor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tanefallor.html; sourceTree = "<group>"; };
-		5E8F72E4173270E400A7F893 /* tanke.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tanke.html; sourceTree = "<group>"; };
-		5E8F72E5173270E400A7F893 /* tankefallar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tankefallar.html; sourceTree = "<group>"; };
-		5E8F72E6173270E500A7F893 /* Tankefallor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Tankefallor.html; sourceTree = "<group>"; };
 		5E8F72F217327FEA00A7F893 /* UtmanaDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtmanaDateView.h; path = ../UtmanaDateView.h; sourceTree = "<group>"; };
 		5E8F72F317327FEB00A7F893 /* UtmanaDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtmanaDateView.m; path = ../UtmanaDateView.m; sourceTree = "<group>"; };
 		5E8F72F417327FEB00A7F893 /* UtmanaDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UtmanaDateView.xib; path = ../UtmanaDateView.xib; sourceTree = "<group>"; };
 		5E8F72F71732932500A7F893 /* EditUtmana.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditUtmana.h; path = ../EditUtmana.h; sourceTree = "<group>"; };
 		5E8F72F81732932500A7F893 /* EditUtmana.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditUtmana.m; path = ../EditUtmana.m; sourceTree = "<group>"; };
 		5E8F72F91732932600A7F893 /* EditUtmana.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditUtmana.xib; path = ../EditUtmana.xib; sourceTree = "<group>"; };
-		5E8F73011732A99C00A7F893 /* BeteendeexperimentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeteendeexperimentController.h; sourceTree = "<group>"; };
-		5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeteendeexperimentController.m; sourceTree = "<group>"; };
-		5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeteendeexperimentController.xib; sourceTree = "<group>"; };
+		5E8F73011732A99C00A7F893 /* BeteendeexperimentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeteendeexperimentController.h; path = ../BeteendeexperimentController.h; sourceTree = "<group>"; };
+		5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeteendeexperimentController.m; path = ../BeteendeexperimentController.m; sourceTree = "<group>"; };
+		5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BeteendeexperimentController.xib; path = ../BeteendeexperimentController.xib; sourceTree = "<group>"; };
 		5EA026A9172E7CD100C37EE4 /* Välkommen till TFH-appen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Välkommen till TFH-appen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA026AC172E7CD100C37EE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EA026AE172E7CD100C37EE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,8 +155,6 @@
 		5EA026C5172E7CD100C37EE4 /* Va_lkommenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Va_lkommenViewController.m; sourceTree = "<group>"; };
 		5EA026C8172E7CD100C37EE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Va_lkommenViewController_iPhone.xib; sourceTree = "<group>"; };
 		5EA026CB172E7CD100C37EE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Va_lkommenViewController_iPad.xib; sourceTree = "<group>"; };
-		5EA026D2172E802600C37EE4 /* MTPopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTPopupWindow.h; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/MTPopupWindow.h; sourceTree = "<group>"; };
-		5EA026D3172E802600C37EE4 /* MTPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTPopupWindow.m; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/MTPopupWindow.m; sourceTree = "<group>"; };
 		5EA026D4172E802700C37EE4 /* popupCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupCloseBtn.png; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupCloseBtn.png; sourceTree = "<group>"; };
 		5EA026D5172E802700C37EE4 /* popupCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popupCloseBtn@2x.png"; path = "../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupCloseBtn@2x.png"; sourceTree = "<group>"; };
 		5EA026D6172E802700C37EE4 /* popupWindowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupWindowBack.png; path = ../../../../Downloads/MTPopupWindowDemo/PopupWindowProject/popupWindowBack.png; sourceTree = "<group>"; };
@@ -137,6 +172,44 @@
 		5EEA724A17316141007F9C37 /* Utmanatankar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utmanatankar.h; path = ../Utmanatankar.h; sourceTree = "<group>"; };
 		5EEA724B17316141007F9C37 /* Utmanatankar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utmanatankar.m; path = ../Utmanatankar.m; sourceTree = "<group>"; };
 		5EEA724C17316141007F9C37 /* Utmanatankar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Utmanatankar.xib; path = ../Utmanatankar.xib; sourceTree = "<group>"; };
+		5EEFD16C1737BD21001E0E25 /* Interoceptivexponering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interoceptivexponering.h; sourceTree = "<group>"; };
+		5EEFD16D1737BD21001E0E25 /* Interoceptivexponering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interoceptivexponering.m; sourceTree = "<group>"; };
+		5EEFD16E1737BD21001E0E25 /* Interoceptivexponering.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Interoceptivexponering.xib; sourceTree = "<group>"; };
+		5EEFD1711737E2EB001E0E25 /* popupwindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popupwindow.h; sourceTree = "<group>"; };
+		5EEFD1721737E2EB001E0E25 /* popupwindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popupwindow.m; sourceTree = "<group>"; };
+		5EF0E298173406C80016A59D /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		5EF0E299173406C80016A59D /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
+		5EF0E29D173409A90016A59D /* Beteend1-100.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Beteend1-100.html"; sourceTree = "<group>"; };
+		5EF0E29E173409A90016A59D /* Beteendeaktivering.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Beteendeaktivering.html; sourceTree = "<group>"; };
+		5EF0E29F173409A90016A59D /* example.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = example.html; sourceTree = "<group>"; };
+		5EF0E2A0173409A90016A59D /* flykt.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = flykt.html; sourceTree = "<group>"; };
+		5EF0E2A1173409A90016A59D /* Introduktion.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Introduktion.html; sourceTree = "<group>"; };
+		5EF0E2A2173409A90016A59D /* lashorna.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lashorna.html; sourceTree = "<group>"; };
+		5EF0E2A3173409A90016A59D /* om.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = om.html; sourceTree = "<group>"; };
+		5EF0E2A4173409A90016A59D /* strategier.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = strategier.html; sourceTree = "<group>"; };
+		5EF0E2A5173409A90016A59D /* tanefallor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tanefallor.html; sourceTree = "<group>"; };
+		5EF0E2A6173409A90016A59D /* tanke.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tanke.html; sourceTree = "<group>"; };
+		5EF0E2A7173409A90016A59D /* tankefallar.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tankefallar.html; sourceTree = "<group>"; };
+		5EF0E2A8173409A90016A59D /* Tankefallor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Tankefallor.html; sourceTree = "<group>"; };
+		5EF0E2B617340F540016A59D /* PMCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCalendar.h; sourceTree = "<group>"; };
+		5EF0E2B817340F540016A59D /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
+		5EF0E2B917340F540016A59D /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
+		5EF0E2BA17340F540016A59D /* PMCalendarBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCalendarBackgroundView.h; sourceTree = "<group>"; };
+		5EF0E2BB17340F540016A59D /* PMCalendarBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCalendarBackgroundView.m; sourceTree = "<group>"; };
+		5EF0E2BC17340F540016A59D /* PMCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCalendarConstants.h; sourceTree = "<group>"; };
+		5EF0E2BD17340F540016A59D /* PMCalendarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCalendarController.h; sourceTree = "<group>"; };
+		5EF0E2BE17340F540016A59D /* PMCalendarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCalendarController.m; sourceTree = "<group>"; };
+		5EF0E2BF17340F540016A59D /* PMCalendarHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCalendarHelpers.h; sourceTree = "<group>"; };
+		5EF0E2C017340F540016A59D /* PMCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMCalendarView.h; sourceTree = "<group>"; };
+		5EF0E2C117340F540016A59D /* PMCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMCalendarView.m; sourceTree = "<group>"; };
+		5EF0E2C217340F540016A59D /* PMDimmingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDimmingView.h; sourceTree = "<group>"; };
+		5EF0E2C317340F540016A59D /* PMDimmingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDimmingView.m; sourceTree = "<group>"; };
+		5EF0E2C417340F540016A59D /* PMPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMPeriod.h; sourceTree = "<group>"; };
+		5EF0E2C517340F540016A59D /* PMPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPeriod.m; sourceTree = "<group>"; };
+		5EF0E2C617340F540016A59D /* PMSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMSelectionView.h; sourceTree = "<group>"; };
+		5EF0E2C717340F540016A59D /* PMSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMSelectionView.m; sourceTree = "<group>"; };
+		5EF0E2D1173410450016A59D /* MTPopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTPopupWindow.h; path = ../MTPopupWindow.h; sourceTree = "<group>"; };
+		5EF0E2D2173410450016A59D /* MTPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTPopupWindow.m; path = ../MTPopupWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,31 +227,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E8F72DB173270E400A7F893 /* THF html files */ = {
-			isa = PBXGroup;
-			children = (
-				5E8F72DC173270E400A7F893 /* Beteend1-100.html */,
-				5E8F72DD173270E400A7F893 /* example.html */,
-				5E8F72DE173270E400A7F893 /* flykt.html */,
-				5E8F72DF173270E400A7F893 /* Introduktion.html */,
-				5E8F72E0173270E400A7F893 /* lashorna.html */,
-				5E8F72E1173270E400A7F893 /* om.html */,
-				5E8F72E2173270E400A7F893 /* strategier.html */,
-				5E8F72E3173270E400A7F893 /* tanefallor.html */,
-				5E8F72E4173270E400A7F893 /* tanke.html */,
-				5E8F72E5173270E400A7F893 /* tankefallar.html */,
-				5E8F72E6173270E500A7F893 /* Tankefallor.html */,
-			);
-			name = "THF html files";
-			path = "../../../../Desktop/THF html files";
-			sourceTree = "<group>";
-		};
 		5EA026A0172E7CD100C37EE4 = {
 			isa = PBXGroup;
 			children = (
-				5E8F73011732A99C00A7F893 /* BeteendeexperimentController.h */,
-				5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */,
-				5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */,
+				5EEFD16C1737BD21001E0E25 /* Interoceptivexponering.h */,
+				5EEFD16D1737BD21001E0E25 /* Interoceptivexponering.m */,
+				5EEFD16E1737BD21001E0E25 /* Interoceptivexponering.xib */,
+				5E51A29B1737898B002259C5 /* Veckostatistik.h */,
+				5E51A29C1737898B002259C5 /* Veckostatistik.m */,
+				5E51A29D1737898B002259C5 /* Veckostatistik.xib */,
+				5EF0E298173406C80016A59D /* check.png */,
+				5EF0E299173406C80016A59D /* uncheck.png */,
+				5E068CF71733F216006FF428 /* Utvardering.h */,
+				5E068CF81733F216006FF428 /* Utvardering.m */,
+				5E068CF91733F217006FF428 /* Utvardering.xib */,
+				5E068CF21733EE1A006FF428 /* Plusvecka.h */,
+				5E068CF31733EE1A006FF428 /* Plusvecka.m */,
+				5E068CF41733EE1A006FF428 /* Plusvecka.xib */,
+				5E068CED1733E9A1006FF428 /* Registreringsvecka.h */,
+				5E068CEE1733E9A1006FF428 /* Registreringsvecka.m */,
+				5E068CEF1733E9A1006FF428 /* Registreringsvecka.xib */,
+				5E068CE81733E561006FF428 /* Beteendeaktivering.h */,
+				5E068CE91733E561006FF428 /* Beteendeaktivering.m */,
+				5E068CEA1733E561006FF428 /* Beteendeaktivering.xib */,
 				5EA026F1172E9D7D00C37EE4 /* libsqlite3.dylib */,
 				5EA026B2172E7CD100C37EE4 /* Välkommen till TFH-appen */,
 				5EA026AB172E7CD100C37EE4 /* Frameworks */,
@@ -207,6 +278,18 @@
 		5EA026B2172E7CD100C37EE4 /* Välkommen till TFH-appen */ = {
 			isa = PBXGroup;
 			children = (
+				5EF0E2D1173410450016A59D /* MTPopupWindow.h */,
+				5EF0E2D2173410450016A59D /* MTPopupWindow.m */,
+				5EF0E2B517340F540016A59D /* PMCalendar */,
+				5E8F73011732A99C00A7F893 /* BeteendeexperimentController.h */,
+				5E8F73021732A99C00A7F893 /* BeteendeexperimentController.m */,
+				5E8F73031732A99C00A7F893 /* BeteendeexperimentController.xib */,
+				5E068CCA1733C880006FF428 /* BeteendeEditForm.h */,
+				5E068CCB1733C880006FF428 /* BeteendeEditForm.m */,
+				5E068CCC1733C881006FF428 /* BeteendeEditForm.xib */,
+				5E068CAB1733BCDD006FF428 /* BeteendeDateList.h */,
+				5E068CAC1733BCDD006FF428 /* BeteendeDateList.m */,
+				5E068CAD1733BCDD006FF428 /* BeteendeDateList.xib */,
 				5E8F72D3173268E200A7F893 /* UICheckbox.h */,
 				5E8F72D4173268E200A7F893 /* UICheckbox.m */,
 				5EA026BB172E7CD100C37EE4 /* Va_lkommenAppDelegate.h */,
@@ -215,8 +298,6 @@
 				5EA026C5172E7CD100C37EE4 /* Va_lkommenViewController.m */,
 				5EA026C7172E7CD100C37EE4 /* Va_lkommenViewController_iPhone.xib */,
 				5EA026CA172E7CD100C37EE4 /* Va_lkommenViewController_iPad.xib */,
-				5EA026D2172E802600C37EE4 /* MTPopupWindow.h */,
-				5EA026D3172E802600C37EE4 /* MTPopupWindow.m */,
 				5EA026E3172E84DC00C37EE4 /* OveningarViewController.h */,
 				5EA026E4172E84DC00C37EE4 /* OveningarViewController.m */,
 				5EA026E5172E84DC00C37EE4 /* OveningarViewController.xib */,
@@ -248,6 +329,8 @@
 				5E8F72F81732932500A7F893 /* EditUtmana.m */,
 				5E8F72F91732932600A7F893 /* EditUtmana.xib */,
 				5EA026B3172E7CD100C37EE4 /* Supporting Files */,
+				5EEFD1711737E2EB001E0E25 /* popupwindow.h */,
+				5EEFD1721737E2EB001E0E25 /* popupwindow.m */,
 			);
 			path = "Välkommen till TFH-appen";
 			sourceTree = "<group>";
@@ -255,7 +338,7 @@
 		5EA026B3172E7CD100C37EE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5E8F72DB173270E400A7F893 /* THF html files */,
+				5EF0E29C173409A90016A59D /* THF html files */,
 				5E8F72D5173268E200A7F893 /* uicheckbox_checked.png */,
 				5E8F72D6173268E200A7F893 /* uicheckbox_checked@2x.png */,
 				5E8F72D7173268E200A7F893 /* uicheckbox_unchecked.png */,
@@ -274,6 +357,57 @@
 				5EA026C2172E7CD100C37EE4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EF0E29C173409A90016A59D /* THF html files */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0E29D173409A90016A59D /* Beteend1-100.html */,
+				5EF0E29E173409A90016A59D /* Beteendeaktivering.html */,
+				5EF0E29F173409A90016A59D /* example.html */,
+				5EF0E2A0173409A90016A59D /* flykt.html */,
+				5EF0E2A1173409A90016A59D /* Introduktion.html */,
+				5EF0E2A2173409A90016A59D /* lashorna.html */,
+				5EF0E2A3173409A90016A59D /* om.html */,
+				5EF0E2A4173409A90016A59D /* strategier.html */,
+				5EF0E2A5173409A90016A59D /* tanefallor.html */,
+				5EF0E2A6173409A90016A59D /* tanke.html */,
+				5EF0E2A7173409A90016A59D /* tankefallar.html */,
+				5EF0E2A8173409A90016A59D /* Tankefallor.html */,
+			);
+			path = "THF html files";
+			sourceTree = "<group>";
+		};
+		5EF0E2B517340F540016A59D /* PMCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0E2B617340F540016A59D /* PMCalendar.h */,
+				5EF0E2B717340F540016A59D /* src */,
+			);
+			path = PMCalendar;
+			sourceTree = "<group>";
+		};
+		5EF0E2B717340F540016A59D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0E2B817340F540016A59D /* NSDate+Helpers.h */,
+				5EF0E2B917340F540016A59D /* NSDate+Helpers.m */,
+				5EF0E2BA17340F540016A59D /* PMCalendarBackgroundView.h */,
+				5EF0E2BB17340F540016A59D /* PMCalendarBackgroundView.m */,
+				5EF0E2BC17340F540016A59D /* PMCalendarConstants.h */,
+				5EF0E2BD17340F540016A59D /* PMCalendarController.h */,
+				5EF0E2BE17340F540016A59D /* PMCalendarController.m */,
+				5EF0E2BF17340F540016A59D /* PMCalendarHelpers.h */,
+				5EF0E2C017340F540016A59D /* PMCalendarView.h */,
+				5EF0E2C117340F540016A59D /* PMCalendarView.m */,
+				5EF0E2C217340F540016A59D /* PMDimmingView.h */,
+				5EF0E2C317340F540016A59D /* PMDimmingView.m */,
+				5EF0E2C417340F540016A59D /* PMPeriod.h */,
+				5EF0E2C517340F540016A59D /* PMPeriod.m */,
+				5EF0E2C617340F540016A59D /* PMSelectionView.h */,
+				5EF0E2C717340F540016A59D /* PMSelectionView.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,20 +481,31 @@
 				5E5046FC17311B8D00B5F6D9 /* EditExerciseTwo.xib in Resources */,
 				5EEA724E17316141007F9C37 /* Utmanatankar.xib in Resources */,
 				5E8F72D2173260A500A7F893 /* popupbg.png in Resources */,
-				5E8F72E7173270E500A7F893 /* Beteend1-100.html in Resources */,
-				5E8F72E8173270E500A7F893 /* example.html in Resources */,
-				5E8F72E9173270E500A7F893 /* flykt.html in Resources */,
-				5E8F72EA173270E500A7F893 /* Introduktion.html in Resources */,
-				5E8F72EB173270E500A7F893 /* lashorna.html in Resources */,
-				5E8F72EC173270E500A7F893 /* om.html in Resources */,
-				5E8F72ED173270E500A7F893 /* strategier.html in Resources */,
-				5E8F72EE173270E500A7F893 /* tanefallor.html in Resources */,
-				5E8F72EF173270E500A7F893 /* tanke.html in Resources */,
-				5E8F72F0173270E500A7F893 /* tankefallar.html in Resources */,
-				5E8F72F1173270E500A7F893 /* Tankefallor.html in Resources */,
 				5E8F72F617327FEB00A7F893 /* UtmanaDateView.xib in Resources */,
 				5E8F72FB1732932600A7F893 /* EditUtmana.xib in Resources */,
 				5E8F73051732A99C00A7F893 /* BeteendeexperimentController.xib in Resources */,
+				5E068CAF1733BCDE006FF428 /* BeteendeDateList.xib in Resources */,
+				5E068CCE1733C881006FF428 /* BeteendeEditForm.xib in Resources */,
+				5E068CEC1733E561006FF428 /* Beteendeaktivering.xib in Resources */,
+				5E068CF11733E9A2006FF428 /* Registreringsvecka.xib in Resources */,
+				5E068CF61733EE1B006FF428 /* Plusvecka.xib in Resources */,
+				5E068CFB1733F217006FF428 /* Utvardering.xib in Resources */,
+				5EF0E29A173406C80016A59D /* check.png in Resources */,
+				5EF0E29B173406C80016A59D /* uncheck.png in Resources */,
+				5EF0E2A9173409A90016A59D /* Beteend1-100.html in Resources */,
+				5EF0E2AA173409A90016A59D /* Beteendeaktivering.html in Resources */,
+				5EF0E2AB173409A90016A59D /* example.html in Resources */,
+				5EF0E2AC173409A90016A59D /* flykt.html in Resources */,
+				5EF0E2AD173409A90016A59D /* Introduktion.html in Resources */,
+				5EF0E2AE173409A90016A59D /* lashorna.html in Resources */,
+				5EF0E2AF173409A90016A59D /* om.html in Resources */,
+				5EF0E2B0173409A90016A59D /* strategier.html in Resources */,
+				5EF0E2B1173409A90016A59D /* tanefallor.html in Resources */,
+				5EF0E2B2173409A90016A59D /* tanke.html in Resources */,
+				5EF0E2B3173409A90016A59D /* tankefallar.html in Resources */,
+				5EF0E2B4173409A90016A59D /* Tankefallor.html in Resources */,
+				5E51A29F1737898B002259C5 /* Veckostatistik.xib in Resources */,
+				5EEFD1701737BD21001E0E25 /* Interoceptivexponering.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +519,6 @@
 				5EA026B9172E7CD100C37EE4 /* main.m in Sources */,
 				5EA026BD172E7CD100C37EE4 /* Va_lkommenAppDelegate.m in Sources */,
 				5EA026C6172E7CD100C37EE4 /* Va_lkommenViewController.m in Sources */,
-				5EA026D8172E802700C37EE4 /* MTPopupWindow.m in Sources */,
 				5EA026E6172E84DC00C37EE4 /* OveningarViewController.m in Sources */,
 				5EA026EB172E8A8B00C37EE4 /* Registreratankar.m in Sources */,
 				5EA026F6172EB0F400C37EE4 /* EditExerciseViewController.m in Sources */,
@@ -386,6 +530,23 @@
 				5E8F72F517327FEB00A7F893 /* UtmanaDateView.m in Sources */,
 				5E8F72FA1732932600A7F893 /* EditUtmana.m in Sources */,
 				5E8F73041732A99C00A7F893 /* BeteendeexperimentController.m in Sources */,
+				5E068CAE1733BCDD006FF428 /* BeteendeDateList.m in Sources */,
+				5E068CCD1733C881006FF428 /* BeteendeEditForm.m in Sources */,
+				5E068CEB1733E561006FF428 /* Beteendeaktivering.m in Sources */,
+				5E068CF01733E9A2006FF428 /* Registreringsvecka.m in Sources */,
+				5E068CF51733EE1B006FF428 /* Plusvecka.m in Sources */,
+				5E068CFA1733F217006FF428 /* Utvardering.m in Sources */,
+				5EF0E2C817340F540016A59D /* NSDate+Helpers.m in Sources */,
+				5EF0E2C917340F540016A59D /* PMCalendarBackgroundView.m in Sources */,
+				5EF0E2CA17340F540016A59D /* PMCalendarController.m in Sources */,
+				5EF0E2CB17340F540016A59D /* PMCalendarView.m in Sources */,
+				5EF0E2CC17340F540016A59D /* PMDimmingView.m in Sources */,
+				5EF0E2CD17340F540016A59D /* PMPeriod.m in Sources */,
+				5EF0E2CE17340F540016A59D /* PMSelectionView.m in Sources */,
+				5EF0E2D3173410450016A59D /* MTPopupWindow.m in Sources */,
+				5E51A29E1737898B002259C5 /* Veckostatistik.m in Sources */,
+				5EEFD16F1737BD21001E0E25 /* Interoceptivexponering.m in Sources */,
+				5EEFD1731737E2EB001E0E25 /* popupwindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
