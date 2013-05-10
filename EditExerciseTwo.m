@@ -36,7 +36,7 @@
     NSLog(@"select_date%@",select_date);
     // Do any additional setup after loading the view from its nib.
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Dela"
-                                                                    style:UIBarButtonItemStylePlain target:nil action:@selector(sharebutton:)];
+                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(sharebutton:)];
     self.navigationItem.rightBarButtonItem = rightButton;
     NSString *docsDir;
     NSArray *dirPaths;
@@ -350,8 +350,91 @@
     }
 }
 -(IBAction)sharebutton:(id)sender{
-    
+    Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+    if (mailClass != nil)
+    {
+        // We must always check whether the current device is configured for sending emails
+        if ([mailClass canSendMail])
+        {
+            [self displayComposerSheet];
+        }
+        else
+        {
+            [self launchMailAppOnDevice];
+        }
+    }
+    else
+    {
+        [self launchMailAppOnDevice];
+    }
 }
+-(void)displayComposerSheet
+{
+    MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+    picker.mailComposeDelegate = self;
+    
+    [picker setSubject:@"Hello from California!"];
+    
+    
+    // Set up recipients
+    NSArray *toRecipients = [NSArray arrayWithObject:@"prasanna.k539@gmail.com"];
+    NSArray *ccRecipients = [NSArray arrayWithObjects:@"prasanna.nalam@gmail.com", nil];
+    NSArray *bccRecipients = [NSArray arrayWithObject:@"avnypkumar@gmail.com"];
+    
+    [picker setToRecipients:toRecipients];
+    [picker setCcRecipients:ccRecipients];
+    [picker setBccRecipients:bccRecipients];
+    
+    // Attach an image to the email
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
+    NSData *myData = [NSData dataWithContentsOfFile:path];
+    [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
+    
+    // Fill out the email body text
+    NSString *emailBody = @"It is raining in sunny California!";
+    [picker setMessageBody:emailBody isHTML:NO];
+    
+    [self presentModalViewController:picker animated:YES];
+    [picker release];
+}
+// Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    // message.hidden = NO;
+    // Notifies users about errors associated with the interface
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            //    message.text = @"Result: canceled";
+            break;
+        case MFMailComposeResultSaved:
+            //    message.text = @"Result: saved";
+            break;
+        case MFMailComposeResultSent:
+            //   message.text = @"Result: sent";
+            break;
+        case MFMailComposeResultFailed:
+            //   message.text = @"Result: failed";
+            break;
+        default:
+            //   message.text = @"Result: not sent";
+            break;
+    }
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+// Launches the Mail application on the device.
+-(void)launchMailAppOnDevice
+{
+    NSString *recipients = @"mailto:prasanna.k539@gmail.com?cc=prasanna.nalam@gmail.com&subject=Hello from California!";
+    NSString *body = @"&body=It is raining in sunny California!";
+    
+    NSString *email = [NSString stringWithFormat:@"%@%@", recipients, body];
+    email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

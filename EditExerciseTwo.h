@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 @interface EditExerciseTwo : UIViewController{
     NSString *select_date;
     UITextView *StagC1;

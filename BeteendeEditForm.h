@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
 #import "PMCalendar.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 @interface BeteendeEditForm : UIViewController<PMCalendarControllerDelegate>{
     NSString *selected_date;
     sqlite3 *exerciseDB;

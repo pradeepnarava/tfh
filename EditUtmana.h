@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
-@interface EditUtmana : UIViewController{
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+@interface EditUtmana : UIViewController<MFMailComposeViewControllerDelegate>{
     NSString *datefrome3;
     sqlite3 *exerciseDB;
     NSString *databasePath;
     UITextView *c1,*c2,*c4,*c5,*c6;
     UILabel *c3;
        IBOutlet UISlider *slider;
+    
 }
 
 @property(nonatomic, retain)NSString *datefrome3;

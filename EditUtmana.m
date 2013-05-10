@@ -36,7 +36,7 @@
     NSLog(@"datefrome3%@",datefrome3);
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Dela"
-                                                                    style:UIBarButtonItemStylePlain target:nil action:@selector(sharebutton:)];
+                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(shareb:)];
     self.navigationItem.rightBarButtonItem = rightButton;
     NSString *docsDir;
     NSArray *dirPaths;
@@ -119,6 +119,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+-(IBAction)shareb:(id)sender{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Share"
+                                                      message:@""
+                                                     delegate:self
+                                            cancelButtonTitle:@"Email"
+                                            otherButtonTitles:nil];
+    [message addButtonWithTitle:@"Bluetooth"];
+    [message addButtonWithTitle:@"Print"];
+    [message show];
+    [message release];
+}
 -(IBAction)updatebutton:(id)sender{
   //  (date,negative,dina,hur,motbevis,tankefalla,alternativ)
     NSLog(@"%@",datefrome3);
@@ -157,8 +168,10 @@
     
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
     
-    if (buttonIndex == 1) {
+    if ([title isEqualToString:@"Delete"]) {
+        NSLog(@"Delete.");
         sqlite3_stmt    *statement;
         if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
             
@@ -185,8 +198,33 @@
         c5.text=@"";
         c6.text=@"";
         
-    }else{
-        
+    }else if([title isEqualToString:@"Email"])
+    {
+        Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+        if (mailClass != nil)
+        {
+            // We must always check whether the current device is configured for sending emails
+            if ([mailClass canSendMail])
+            {
+                [self displayComposerSheet];
+            }
+            else
+            {
+                [self launchMailAppOnDevice];
+            }
+        }
+        else
+        {
+            [self launchMailAppOnDevice];
+        }
+    }
+    else if([title isEqualToString:@"Bluetooth"])
+    {
+        NSLog(@"Button 2 was selected.");
+    }
+    else if([title isEqualToString:@"Print"])
+    {
+        NSLog(@"Button 3 was selected.");
     }
 }
 -(IBAction)chSlider:(id)sender {
@@ -196,8 +234,71 @@
     NSLog(@"%@",str);
 }
 
--(IBAction)sharebutton:(id)sender{
+-(void)displayComposerSheet
+{
+    MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+    picker.mailComposeDelegate = self;
     
+    [picker setSubject:@"Hello from California!"];
+    
+    
+    // Set up recipients
+    NSArray *toRecipients = [NSArray arrayWithObject:@"prasanna.k539@gmail.com"];
+    NSArray *ccRecipients = [NSArray arrayWithObjects:@"prasanna.nalam@gmail.com", nil];
+    NSArray *bccRecipients = [NSArray arrayWithObject:@"avnypkumar@gmail.com"];
+    
+    [picker setToRecipients:toRecipients];
+    [picker setCcRecipients:ccRecipients];
+    [picker setBccRecipients:bccRecipients];
+    
+    // Attach an image to the email
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"rainy" ofType:@"png"];
+    NSData *myData = [NSData dataWithContentsOfFile:path];
+    [picker addAttachmentData:myData mimeType:@"image/png" fileName:@"rainy"];
+    
+    // Fill out the email body text
+    NSString *emailBody = @"It is raining in sunny California!";
+    [picker setMessageBody:emailBody isHTML:NO];
+    
+    [self presentModalViewController:picker animated:YES];
+    [picker release];
+}
+// Dismisses the email composition interface when users tap Cancel or Send. Proceeds to update the message field with the result of the operation.
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+   // message.hidden = NO;
+    // Notifies users about errors associated with the interface
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+        //    message.text = @"Result: canceled";
+            break;
+        case MFMailComposeResultSaved:
+        //    message.text = @"Result: saved";
+            break;
+        case MFMailComposeResultSent:
+         //   message.text = @"Result: sent";
+            break;
+        case MFMailComposeResultFailed:
+         //   message.text = @"Result: failed";
+            break;
+        default:
+         //   message.text = @"Result: not sent";
+            break;
+    }
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+// Launches the Mail application on the device.
+-(void)launchMailAppOnDevice
+{
+    NSString *recipients = @"mailto:prasanna.k539@gmail.com?cc=prasanna.nalam@gmail.com&subject=Hello from California!";
+    NSString *body = @"&body=It is raining in sunny California!";
+    
+    NSString *email = [NSString stringWithFormat:@"%@%@", recipients, body];
+    email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
 }
 - (void)didReceiveMemoryWarning
 {

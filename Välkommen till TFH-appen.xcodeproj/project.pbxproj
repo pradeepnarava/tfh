@@ -59,6 +59,7 @@
 		5EA026F2172E9D7D00C37EE4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA026F1172E9D7D00C37EE4 /* libsqlite3.dylib */; };
 		5EA026F6172EB0F400C37EE4 /* EditExerciseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA026F4172EB0F400C37EE4 /* EditExerciseViewController.m */; };
 		5EA026F7172EB0F400C37EE4 /* EditExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EA026F5172EB0F400C37EE4 /* EditExerciseViewController.xib */; };
+		5EA9C61C173CCBFF00C6E426 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA9C61B173CCBFF00C6E426 /* MessageUI.framework */; };
 		5EEA724D17316141007F9C37 /* Utmanatankar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA724B17316141007F9C37 /* Utmanatankar.m */; };
 		5EEA724E17316141007F9C37 /* Utmanatankar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEA724C17316141007F9C37 /* Utmanatankar.xib */; };
 		5EEFD16F1737BD21001E0E25 /* Interoceptivexponering.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEFD16D1737BD21001E0E25 /* Interoceptivexponering.m */; };
@@ -169,6 +170,7 @@
 		5EA026F3172EB0F400C37EE4 /* EditExerciseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditExerciseViewController.h; path = ../EditExerciseViewController.h; sourceTree = "<group>"; };
 		5EA026F4172EB0F400C37EE4 /* EditExerciseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditExerciseViewController.m; path = ../EditExerciseViewController.m; sourceTree = "<group>"; };
 		5EA026F5172EB0F400C37EE4 /* EditExerciseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditExerciseViewController.xib; path = ../EditExerciseViewController.xib; sourceTree = "<group>"; };
+		5EA9C61B173CCBFF00C6E426 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		5EEA724A17316141007F9C37 /* Utmanatankar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utmanatankar.h; path = ../Utmanatankar.h; sourceTree = "<group>"; };
 		5EEA724B17316141007F9C37 /* Utmanatankar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utmanatankar.m; path = ../Utmanatankar.m; sourceTree = "<group>"; };
 		5EEA724C17316141007F9C37 /* Utmanatankar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Utmanatankar.xib; path = ../Utmanatankar.xib; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA9C61C173CCBFF00C6E426 /* MessageUI.framework in Frameworks */,
 				5EA026F2172E9D7D00C37EE4 /* libsqlite3.dylib in Frameworks */,
 				5EA026AD172E7CD100C37EE4 /* UIKit.framework in Frameworks */,
 				5EA026AF172E7CD100C37EE4 /* Foundation.framework in Frameworks */,
@@ -230,6 +233,7 @@
 		5EA026A0172E7CD100C37EE4 = {
 			isa = PBXGroup;
 			children = (
+				5EA9C61B173CCBFF00C6E426 /* MessageUI.framework */,
 				5EEFD16C1737BD21001E0E25 /* Interoceptivexponering.h */,
 				5EEFD16D1737BD21001E0E25 /* Interoceptivexponering.m */,
 				5EEFD16E1737BD21001E0E25 /* Interoceptivexponering.xib */,

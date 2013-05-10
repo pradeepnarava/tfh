@@ -24,6 +24,7 @@
 @synthesize secondsTimer;
 @synthesize seconds;
 @synthesize minutes;
+@synthesize titlelabel,titlelabel1;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -53,6 +54,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title=@"Interoceptiv exponering";
        arr1=[[NSMutableArray alloc]init];
        arr2=[[NSMutableArray alloc]init];
     arr3=[[NSMutableArray alloc]init];
@@ -65,8 +67,23 @@
     [arr2 insertObject:@"" atIndex:0];
     [arr3 insertObject:@"" atIndex:0];
     
-      
+    titlelabel.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture =
+    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titlelabelalert:)] autorelease];
+    [titlelabel addGestureRecognizer:tapGesture];
+    
+    titlelabel1.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture2 =
+    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titlelabel1alert:)] autorelease];
+    [titlelabel1 addGestureRecognizer:tapGesture2];
    }
+-(IBAction)titlelabelalert:(id)sender{
+    [MTPopupWindow showWindowWithHTMLFile:@"lashorna.html" insideView:self.view];
+}
+
+-(IBAction)titlelabel1alert:(id)sender{
+    [MTPopupWindow showWindowWithHTMLFile:@"lashorna.html" insideView:self.view];
+}
 - (void) timerFireMethod:(NSTimer *) theTimer
 {
     

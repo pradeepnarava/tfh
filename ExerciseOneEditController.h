@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-
-
-@interface ExerciseOneEditController : UIViewController{
+@interface ExerciseOneEditController : UIViewController<MFMailComposeViewControllerDelegate>{
     NSString *selectedate;
     sqlite3 *exerciseDB;
     NSString *databasePath;

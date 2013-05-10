@@ -10,7 +10,8 @@
 #import <sqlite3.h>
 @interface Interoceptivexponering : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
- UITableView *tblView;
+    UILabel *titlelabel,*titlelabel1;
+    UITableView *tblView;
     UILabel *ovning;
     UITextView *egen;
     UISlider *slider;
@@ -24,6 +25,8 @@
    }
 //-(IBAction)switchStateChanged:(id)sender;
 @property (nonatomic, retain)IBOutlet UILabel *prc;
+@property (nonatomic, retain)IBOutlet UILabel *titlelabel;
+@property (nonatomic, retain)IBOutlet UILabel *titlelabel1;
 @property (nonatomic, retain)IBOutlet UILabel *ovning;
 @property (nonatomic, retain)IBOutlet  UITextView *egen;
 @property (nonatomic, retain)IBOutlet  UISlider *slider;
