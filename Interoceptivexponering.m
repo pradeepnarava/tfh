@@ -76,6 +76,45 @@
     UITapGestureRecognizer *tapGesture2 =
     [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titlelabel1alert:)] autorelease];
     [titlelabel1 addGestureRecognizer:tapGesture2];
+    
+    NSString *docsDir;
+    NSArray *dirPaths;
+    
+    // Get the documents directory
+    dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    docsDir = [dirPaths objectAtIndex:0];
+    
+    // Build the path to the database file
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"exerciseDB.db"]];
+    
+    NSFileManager *filemgr = [NSFileManager defaultManager];
+    
+    if ([filemgr fileExistsAtPath: databasePath ] == YES)
+    {
+		const char *dbpath = [databasePath UTF8String];
+        
+        if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
+        {
+            char *errMsg;
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISE5 (ID INTEGER PRIMARY KEY AUTOINCREMENT,  OVNING TEXT ,EGEN TEXT,ANGEST TEXT)";
+            
+            if (sqlite3_exec(exerciseDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
+            {
+                NSLog(@"Failed to create database");
+            }
+            
+            sqlite3_close(exerciseDB);
+            
+        } else {
+            //status.text = @"Failed to open/create database";
+        }
+    }
+    
+    [filemgr release];
+    
+
+    
    }
 -(IBAction)titlelabelalert:(id)sender{
     [MTPopupWindow showWindowWithHTMLFile:@"lashorna.html" insideView:self.view];
@@ -123,6 +162,8 @@
 }
 - (IBAction)closeBtn:(id)sender
 {
+      [cb1 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
+   
     pupview.hidden=YES;
     [self.view bringSubviewToFront:timerview];
     timerview.hidden = NO;
@@ -144,7 +185,7 @@
 - (IBAction)closetimer:(id)sender{
     timerview.hidden=YES;
     ovning.text=scb;
-  
+   scb=NULL;
 }
 - (IBAction)starttimer:(id)sender{
     self.secondsTimer = [NSTimer
@@ -160,8 +201,7 @@
 }
 -(IBAction)selectedcheckbox:(id)sender{
     UIButton *btn = (UIButton *)sender;
-    
-    if (btn.tag == 1)
+     if (btn.tag == 1)
     {
         NSLog(@"%@",scb);
         if (scb == NULL) {
@@ -262,8 +302,7 @@
     // Using a cell identifier will allow your app to reuse cells as they come and go from the screen.
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-    }
-     NSUInteger row = [indexPath row];
+    }     NSUInteger row = [indexPath row];
     // Deciding which data to put into this particular cell.
     // If it the first row, the data input will be "Data1" from the array.
     ovning=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 60)];
@@ -341,7 +380,7 @@
    // Selectedrow=SelectedDate;
 }
 -(IBAction)newcolm:(id)sender{
-    [arr1 insertObject:scb atIndex:noOfSection-1];
+    [arr1 insertObject:ovning.text atIndex:noOfSection-1];
          NSLog(@"%@",arr1);
     [arr2 insertObject:egen.text atIndex:noOfSection-1];
      NSLog(@"%@",arr2);
@@ -351,6 +390,42 @@
     NSLog(@"noof sections  %d",noOfSection);
     [self.tblView reloadData];
 }
+-(IBAction)sparacolm:(id)sender{
+      NSLog(@"%@",arr1);
+     NSLog(@"%@",arr2);
+     NSLog(@"%@",arr3);
+    sqlite3_stmt    *statement;
+      const char *dbpath = [databasePath UTF8String];
+   
+        if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
+            {
+                NSLog(@"%u",arr1.count);
+                for (int i=0; i<arr1.count; i++) {
+                    NSLog(@"%u",i);
+//                    if ([[arr1 objectAtIndex:i] isEqualToString:@""]) {
+//                        NSLog(@"nulllllll");
+//                    }else{
+                NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO EXERCISE5(ovning,egen,angest) VALUES (\"%@\", \"%@\", \"%@\" )", [arr1 objectAtIndex:i],[arr2 objectAtIndex:i],[arr3 objectAtIndex:i]];
+       
+                const char *insert_stmt = [insertSQL UTF8String];
+     
+               sqlite3_prepare_v2(exerciseDB, insert_stmt, -1, &statement, NULL);
+                 if (sqlite3_step(statement) == SQLITE_DONE)
+              {
+          
+            
+                   } else {
+                        NSLog(@"no");
+                }
+                   sqlite3_finalize(statement);
+                   sqlite3_close(exerciseDB);
+                      
+            }
+              //  }
+    }
+  
+}
+
 - (void)viewDidUnload{
     [super viewDidUnload];
 }

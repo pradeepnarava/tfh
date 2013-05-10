@@ -12,7 +12,7 @@
 #import "PMCalendar.h"
 @interface BeteendeexperimentController : UIViewController<PMCalendarControllerDelegate>{
     UILabel *label,*label1;
-     IBOutlet UISlider *slider;
+     IBOutlet UISlider *slider,*slider1;
     UITextView *ex3c2,*ex3c3,*ex3c4,*ex3c5;
     UITextField *ex3c1;
     UILabel *slabel1,*slabel2;

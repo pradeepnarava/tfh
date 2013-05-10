@@ -25,7 +25,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+}
 -(IBAction)oveningarbutton:(id)sender{
     [self.navigationController pushViewController:ovc animated:YES];
 }

@@ -797,11 +797,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">slider1</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="533032395"/>
+					</object>
+					<int key="connectionID">333</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">slider</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="132527087"/>
 					</object>
-					<int key="connectionID">328</int>
+					<int key="connectionID">334</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -818,7 +826,7 @@
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
-					<int key="connectionID">250</int>
+					<int key="connectionID">330</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -3342,7 +3350,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">328</int>
+			<int key="maxID">334</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -3404,6 +3412,7 @@
 						<string key="slabel1">UILabel</string>
 						<string key="slabel2">UILabel</string>
 						<string key="slider">UISlider</string>
+						<string key="slider1">UISlider</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="ex3c1">
@@ -3444,6 +3453,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="slider">
 							<string key="name">slider</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="slider1">
+							<string key="name">slider1</string>
 							<string key="candidateClassName">UISlider</string>
 						</object>
 					</dictionary>

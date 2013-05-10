@@ -300,8 +300,11 @@
     
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
     
-    if (buttonIndex == 1) {
+    if ([title isEqualToString:@"Delete"]) {
+        NSLog(@"Delete.");
+    
         sqlite3_stmt    *statement;
         if (sqlite3_open([databasePath UTF8String], &exerciseDB) == SQLITE_OK) {
             
@@ -345,29 +348,47 @@
         EtikeC1.text=@"";
         EtikeC2.text=@"";
         
-    }else{
-        
-    }
-}
--(IBAction)sharebutton:(id)sender{
-    Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
-    if (mailClass != nil)
+    }else if([title isEqualToString:@"Email"])
     {
-        // We must always check whether the current device is configured for sending emails
-        if ([mailClass canSendMail])
+        Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+        if (mailClass != nil)
         {
-            [self displayComposerSheet];
+            // We must always check whether the current device is configured for sending emails
+            if ([mailClass canSendMail])
+            {
+                [self displayComposerSheet];
+            }
+            else
+            {
+                [self launchMailAppOnDevice];
+            }
         }
         else
         {
             [self launchMailAppOnDevice];
         }
     }
-    else
+    else if([title isEqualToString:@"Bluetooth"])
     {
-        [self launchMailAppOnDevice];
+        NSLog(@"Button 2 was selected.");
     }
+    else if([title isEqualToString:@"Print"])
+    {
+        NSLog(@"Button 3 was selected.");
+    }
+
 }
+-(IBAction)sharebutton:(id)sender{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Share"
+                                                      message:@""
+                                                     delegate:self
+                                            cancelButtonTitle:@"Email"
+                                            otherButtonTitles:nil];
+    [message addButtonWithTitle:@"Bluetooth"];
+    [message addButtonWithTitle:@"Print"];
+    [message show];
+    [message release];
+   }
 -(void)displayComposerSheet
 {
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];

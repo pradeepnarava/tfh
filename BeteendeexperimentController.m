@@ -113,7 +113,7 @@
 }
 -(IBAction)changeSlider1:(id)sender {
     
-    NSString *sl2= [[NSString alloc] initWithFormat:@"%d%@", (int)slider.value,@"%"];
+    NSString *sl2= [[NSString alloc] initWithFormat:@"%d%@", (int)slider1.value,@"%"];
     NSLog(@"str%@",sl2);
     self.slabel2.text=sl2;
      NSLog(@"self.slabel2.text%@",self.slabel2.text);

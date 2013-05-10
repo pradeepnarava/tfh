@@ -7,19 +7,6 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "BeteendeexperimentController.m"
-         timestampString = "389626361.184707"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "143"
-         endingLineNumber = "143"
-         landmarkName = "-saveButton:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "BeteendeEditForm.m"
          timestampString = "389627175.563479"
          startingColumnNumber = "9223372036854775807"
@@ -33,25 +20,12 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Registreratankar.m"
-         timestampString = "389782164.815964"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "160"
-         endingLineNumber = "160"
-         landmarkName = "-Sparabutton:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "ExerciseOneEditController.m"
-         timestampString = "389802063.300743"
+         timestampString = "389871730.902756"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "47"
-         endingLineNumber = "47"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
