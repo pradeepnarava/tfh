@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"Tidigare Formulär";
+    //self.navigationItem.title=@"Tidigare Formulär";
     listexercise1=[[NSMutableArray alloc]init];
     [listexercise1 removeAllObjects];
     Selectedrow=[[NSString alloc]init];

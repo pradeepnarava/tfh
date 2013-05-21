@@ -19,6 +19,10 @@
     UITextView *beteenden;
     UIAlertView *alert;
     EditExerciseViewController *eevc;
+    IBOutlet UIView *tabellenView;
+    IBOutlet UIScrollView *scroll;
+       IBOutlet UIScrollView *scroll1;
+     
 }
 
 @property(nonatomic,retain)IBOutlet UITextView *situation;
@@ -37,4 +41,8 @@
 -(IBAction)nyttbutton:(id)sender;
 -(IBAction)retrivebutton:(id)sender;
 -(IBAction)Editbutton:(id)sender;
+-(IBAction)closebutton:(id)sender;
+-(IBAction)tabellencheck:(id)sender;
+-(IBAction)mainlabelalert:(id)sender;
+
 @end

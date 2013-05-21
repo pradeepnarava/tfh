@@ -17,7 +17,7 @@
     NSString *databasePath;
      IBOutlet UISlider *slider;
     UtmanaDateView *udv;
-    
+       IBOutlet UIScrollView *scroll;
 }
 @property(nonatomic, retain)IBOutlet UILabel *label;
 @property(nonatomic, retain)IBOutlet UILabel *label1;
@@ -39,4 +39,5 @@
 -(IBAction)sparabutton:(id)sender;
 -(IBAction)newbutton:(id)sender;
 -(IBAction)nextbutton:(id)sender;
+-(IBAction)labelalert:(id)sender;
 @end

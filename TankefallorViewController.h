@@ -39,12 +39,13 @@
     UITextView *KanslC2;
     UITextView *EtikeC1;
     UITextView *EtikeC2;
+     IBOutlet UIScrollView *scroll;
 }
 @property(nonatomic, retain)IBOutlet UILabel *label;
 -(IBAction)Sparabutton:(id)sender;
 -(IBAction)Nyttbutton:(id)sender;
 -(IBAction)nextbutton:(id)sender;
-
+-(IBAction)mainlabelalert:(id)sender;
 
 @property(nonatomic, retain)IBOutlet UITextView *StagC1;
 @property(nonatomic, retain)IBOutlet UITextView *StagC2;

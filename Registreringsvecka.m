@@ -7,7 +7,7 @@
 //
 
 #import "Registreringsvecka.h"
-
+#import "MTPopupWindow.h"
 @interface Registreringsvecka ()
 
 @end
@@ -28,8 +28,22 @@
     self.navigationItem.title=@"Registreringsvecka";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [super viewDidLoad];
+
 }
 
+
+-(IBAction)sub1button:(id)sender{
+    
+    aktiViewObj = [[AktivitetsplanenViewController alloc]initWithNibName:@"AktivitetsplanenViewController" bundle:nil];
+
+    [self.navigationController pushViewController:aktiViewObj animated:YES];
+}
+
+-(IBAction)ILabel:(id)sender{
+     [MTPopupWindow showWindowWithHTMLFile:@"Registreringsvecka.html" insideView:self.view];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

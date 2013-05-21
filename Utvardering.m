@@ -32,16 +32,17 @@
                                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
 
-    mainlabel.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture =
-    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mlabelalert:)] autorelease];
-    [mainlabel addGestureRecognizer:tapGesture];
+//    mainlabel.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tapGesture =
+//    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mlabelalert:)] autorelease];
+//    [mainlabel addGestureRecognizer:tapGesture];
+    
     vss=[[Veckostatistik alloc]initWithNibName:@"Veckostatistik" bundle:nil];
     [super viewDidLoad];
   
 }
 -(IBAction)mlabelalert:(id)sender{
-    [MTPopupWindow showWindowWithHTMLFile:@"Beteendeaktivering.html" insideView:self.view];
+    [MTPopupWindow showWindowWithHTMLFile:@"￼￼Utvardering.html" insideView:self.view];
 }
 
 -(IBAction)checkBoxSelect:(id)sender

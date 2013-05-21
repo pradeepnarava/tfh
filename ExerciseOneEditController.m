@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"Edit Form";
+   // self.navigationItem.title=@"Edit Form";
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Dela"
                                                                    style:UIBarButtonItemStylePlain target:self action:@selector(shareButton:)];
@@ -95,6 +95,8 @@
         
         
     }
+    scroll.scrollEnabled = YES;
+    [scroll setContentSize:CGSizeMake(320, 1100)];
 
 
     // Do any additional setup after loading the view from its nib.

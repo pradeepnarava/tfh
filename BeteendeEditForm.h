@@ -19,6 +19,8 @@
     UITextView *Eex4c2,*Eex4c3,*Eex4c4,*Eex4c5;
      IBOutlet UISlider *slider;
      UILabel *slabel1,*slabel2;
+    IBOutlet UIScrollView *scroll;
+
 }
 @property(nonatomic, retain)IBOutlet UILabel *slabel1;
 @property(nonatomic, retain)IBOutlet UILabel *slabel2;

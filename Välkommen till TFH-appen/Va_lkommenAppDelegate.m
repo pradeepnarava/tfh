@@ -12,6 +12,8 @@
 
 @implementation Va_lkommenAppDelegate
 
+@synthesize dateSelected;
+
 - (void)dealloc
 {
     [_window release];
@@ -25,7 +27,9 @@
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         mainObj = [[[Va_lkommenViewController alloc] initWithNibName:@"Va_lkommenViewController_iPhone" bundle:nil] autorelease];
+        
           nav = [[UINavigationController alloc]initWithRootViewController:mainObj];
+        
     } else {
       mainObj = [[[Va_lkommenViewController alloc] initWithNibName:@"Va_lkommenViewController_iPad" bundle:nil] autorelease];
           nav = [[UINavigationController alloc]initWithRootViewController:mainObj];

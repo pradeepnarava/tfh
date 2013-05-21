@@ -39,6 +39,7 @@
     
     sqlite3 *exerciseDB;
     NSString *databasePath;
+     IBOutlet UIScrollView *scroll;
 }
 
 @property(nonatomic, retain)IBOutlet UITextView *StagC1;

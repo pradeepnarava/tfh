@@ -8,6 +8,8 @@
 
 #import "Utmanatankar.h"
 #import "MTPopupWindow.h"
+#import "UIViewController+MJPopupViewController.h"
+#import "popupViewController.h"
 NSArray *pArray;
 @interface Utmanatankar ()
 
@@ -33,14 +35,17 @@ NSArray *pArray;
 
 - (void)viewDidLoad
 {
-   self.navigationItem.title=@"Utmana tankr";
+  self.navigationItem.title=@"Utmana tankr";
+    scroll.scrollEnabled = YES;
+    [scroll setContentSize:CGSizeMake(320, 1400)];
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
-    label.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture =
-    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelalert:)] autorelease];
-    [label addGestureRecognizer:tapGesture];
+    
+//    label.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tapGesture =
+//    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelalert:)] autorelease];
+//    [label addGestureRecognizer:tapGesture];
     
     label1.userInteractionEnabled = YES;
     UITapGestureRecognizer *tapGesture2 =
@@ -121,11 +126,18 @@ NSArray *pArray;
     // Do any additional setup after loading the view from its nib.
 }
 -(IBAction)labelalert:(id)sender{
-     [MTPopupWindow showWindowWithHTMLFile:@"om.html" insideView:self.view];
+     [MTPopupWindow showWindowWithHTMLFile:@"Utmanatankar.html" insideView:self.view];
+}
+- (void)cancelButtonClicked:(popupViewController *)aSecondDetailViewController
+{
+    [self dismissPopupViewControllerWithanimationType:MJPopupViewAnimationFade];
 }
 
 -(IBAction)label1alert:(id)sender{
-     [MTPopupWindow showWindowWithHTMLFile:@"om.html" insideView:self.view];
+   // popupViewController *secondDetailViewController = [[popupViewController alloc] initWithNibName:@"popupViewController" bundle:nil];
+  // secondDetailViewController.delegate = self;
+  //  [self presentPopupViewController:secondDetailViewController animationType:MJPopupViewAnimationFade];
+  
 }
 -(IBAction)strategieralert:(id)sender{
     [MTPopupWindow showWindowWithHTMLFile:@"tankefallar.html" insideView:self.view];
@@ -135,16 +147,16 @@ NSArray *pArray;
 }
 
 -(IBAction)dinalert:(id)sender{
-    [MTPopupWindow showWindowWithHTMLFile:@"om.html" insideView:self.view];
+    [MTPopupWindow showWindowWithHTMLFile:@"Minabevis.html" insideView:self.view];
 }
 -(IBAction)motavisalert:(id)sender{
-    [MTPopupWindow showWindowWithHTMLFile:@"om.html" insideView:self.view];
+    [MTPopupWindow showWindowWithHTMLFile:@"Motbevis.html" insideView:self.view];
 }
 -(IBAction)tankealert:(id)sender{
-    [MTPopupWindow showWindowWithHTMLFile:@"tankefallor.html" insideView:self.view];
+    [MTPopupWindow showWindowWithHTMLFile:@"tanefallor.html" insideView:self.view];
 }
 -(IBAction)alltankealert:(id)sender{
-    [MTPopupWindow showWindowWithHTMLFile:@"tankefallor.html" insideView:self.view];
+    [MTPopupWindow showWindowWithHTMLFile:@"Alternativtanke.html" insideView:self.view];
 }
 
 -(IBAction)changeSlider:(id)sender {
@@ -211,8 +223,8 @@ NSArray *pArray;
 
 }
 -(IBAction)newbutton:(id)sender{
-    if ([c1.text isEqualToString:@""]||[c2.text isEqualToString:@""]||[c4.text isEqualToString:@""]
-        ||[c5.text isEqualToString:@""]||[c6.text isEqualToString:@""]) {
+    if ([c1.text isEqualToString:@""]&&[c2.text isEqualToString:@""]&&[c4.text isEqualToString:@""]
+        &&[c5.text isEqualToString:@""]&&[c6.text isEqualToString:@""]) {
         
     }else{
     UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Alert message" message:@"Please Enter the text above fields"

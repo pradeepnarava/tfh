@@ -19,6 +19,8 @@
     UITextView *negative;
     UITextView *overiga;
     UITextView *beteenden;
+    IBOutlet UIScrollView *scroll;
+
 }
 @property(nonatomic, retain)NSString *selectedate;
 -(IBAction)updatebutton:(id)sender;

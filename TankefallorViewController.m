@@ -34,11 +34,13 @@
 {
     
     self.navigationItem.title=@"Tankefällor";
-    
-    label.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture =
-    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mainlabelalert:)] autorelease];
-    [label addGestureRecognizer:tapGesture];
+    scroll.scrollEnabled = YES;
+    [scroll setContentSize:CGSizeMake(320, 3200)];
+
+//    label.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tapGesture =
+//    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mainlabelalert:)] autorelease];
+//    [label addGestureRecognizer:tapGesture];
 
     // Do any additional setup after loading the view from its nib.
     
@@ -83,7 +85,7 @@
     
 }
 -(IBAction)mainlabelalert:(id)sender{
-    [MTPopupWindow showWindowWithHTMLFile:@"om.html" insideView:self.view];
+    [MTPopupWindow showWindowWithHTMLFile:@"Tankefallor.html" insideView:self.view];
 }
 
 
@@ -157,7 +159,7 @@
 
 }
 -(IBAction)Nyttbutton:(id)sender{
-    if([StagC1.text isEqualToString:@""] || [StagC2.text isEqualToString:@""] || [TankeC1.text isEqualToString:@""] || [AllC1.text isEqualToString:@""]){
+    if([StagC1.text isEqualToString:@""] && [StagC2.text isEqualToString:@""] && [TankeC1.text isEqualToString:@""] && [AllC1.text isEqualToString:@""]){
         
     }else{
      UIAlertView  *alert=[[UIAlertView alloc] initWithTitle:@"Alert message" message:@"Please Enter the text above fields"

@@ -36,7 +36,9 @@
 }
 - (void)viewDidLoad
 {
-    self.navigationItem.title=@"";
+   // self.navigationItem.title=@"";
+    scroll.scrollEnabled = YES;
+    [scroll setContentSize:CGSizeMake(320, 1300)];
     NSLog(@"%@",selected_date);
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Dela"
                                                                     style:UIBarButtonItemStylePlain target:nil action:@selector(sharebutton:)];

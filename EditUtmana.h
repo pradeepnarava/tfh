@@ -17,6 +17,8 @@
     UITextView *c1,*c2,*c4,*c5,*c6;
     UILabel *c3;
        IBOutlet UISlider *slider;
+    IBOutlet UIScrollView *scroll;
+
     
 }
 

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AktivitetsplanenViewController.h"
 
 @interface Registreringsvecka : UIViewController
+{
+    AktivitetsplanenViewController *aktiViewObj;
+     
+}
 
+-(IBAction)sub1button:(id)sender;
+-(IBAction)ILabel:(id)sender;
 @end

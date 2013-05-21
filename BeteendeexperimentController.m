@@ -38,15 +38,18 @@
 - (void)viewDidLoad
 {
     self.navigationItem.title=@"Beteendeexperiment";
+    scroll.scrollEnabled = YES;
+    [scroll setContentSize:CGSizeMake(320, 1200)];
+
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
 
     
-    label.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture =
-    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mainlabelalert:)] autorelease];
-    [label addGestureRecognizer:tapGesture];
+//    label.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tapGesture =
+//    [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(mainlabelalert:)] autorelease];
+//    [label addGestureRecognizer:tapGesture];
     
     label1.userInteractionEnabled = YES;
     UITapGestureRecognizer *tapGesture2 =
@@ -98,7 +101,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 -(IBAction)mainlabelalert:(id)sender{
-     [MTPopupWindow showWindowWithHTMLFile:@"om.html" insideView:self.view];
+     [MTPopupWindow showWindowWithHTMLFile:@"Beteebdeexperiment.html" insideView:self.view];
 }
 -(IBAction)l1alert:(id)sender{
      [MTPopupWindow showWindowWithHTMLFile:@"tanke.html" insideView:self.view];
@@ -113,7 +116,7 @@
 }
 -(IBAction)changeSlider1:(id)sender {
     
-    NSString *sl2= [[NSString alloc] initWithFormat:@"%d%@", (int)slider.value,@"%"];
+    NSString *sl2= [[NSString alloc] initWithFormat:@"%d%@", (int)slider1.value,@"%"];
     NSLog(@"str%@",sl2);
     self.slabel2.text=sl2;
      NSLog(@"self.slabel2.text%@",self.slabel2.text);
@@ -168,7 +171,7 @@
 
 }
 -(IBAction)newButton:(id)sender{
-    if([ex3c1.text isEqualToString:@""] || [ex3c2.text isEqualToString:@""] || [ex3c3.text isEqualToString:@""] || [ex3c4.text isEqualToString:@""]|| [ex3c5.text isEqualToString:@""]){
+    if([ex3c1.text isEqualToString:@""] && [ex3c2.text isEqualToString:@""] && [ex3c3.text isEqualToString:@""] && [ex3c4.text isEqualToString:@""]&& [ex3c5.text isEqualToString:@""]){
         
     }else{
   UIAlertView  *alert=[[UIAlertView alloc] initWithTitle:@"Alert message" message:@"Please Enter the text above fields"

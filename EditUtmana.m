@@ -32,7 +32,9 @@
 
 - (void)viewDidLoad
 {
-    self.navigationItem.title=@"Exercise-3";
+    //self.navigationItem.title=@"Exercise-3";
+    scroll.scrollEnabled = YES;
+    [scroll setContentSize:CGSizeMake(320, 1350)];
     NSLog(@"datefrome3%@",datefrome3);
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Dela"

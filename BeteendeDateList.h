@@ -16,6 +16,7 @@
     NSString *databasePath;
     UITableView *tableview;
     BeteendeEditForm *bef;
+     IBOutlet UIScrollView *scroll;
 }
 @property(nonatomic,retain)IBOutlet UITableView *tableview;
 

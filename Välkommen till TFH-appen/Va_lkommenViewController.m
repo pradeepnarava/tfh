@@ -17,17 +17,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"Välkommen till TFH-appen";
+    self.navigationItem.title=@"KBT Appen";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back"
                                                                    style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
-    ovc=[[OveningarViewController alloc]initWithNibName:@"OveningarViewController" bundle:nil];
+   
 	// Do any additional setup after loading the view, typically from a nib.
+    
+  
+    UINavigationBar *navBar = self.navigationController.navigationBar;
+    UIImage *image = [UIImage imageNamed:@"topbar2.png"];
+    [navBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    
 }
 
 
 -(IBAction)oveningarbutton:(id)sender{
-    [self.navigationController pushViewController:ovc animated:YES];
+//    NSString *strNibname;
+//    if (deviceIdiom == iPhone) {
+//        strNibname = @"OveningarViewController";
+//    } else {
+//        strNibname = @"OveningarViewController_iPad";
+//        
+//    }
+     ovc=[[OveningarViewController alloc]initWithNibName:@"OveningarViewController" bundle:[NSBundle mainBundle]];
+       [self.navigationController pushViewController:ovc animated:YES ];
 }
 
 -(IBAction)introduktion:(id)sender{
@@ -44,6 +58,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+
+ - (void )didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    
 }
 
 @end

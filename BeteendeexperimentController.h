@@ -12,13 +12,14 @@
 #import "PMCalendar.h"
 @interface BeteendeexperimentController : UIViewController<PMCalendarControllerDelegate>{
     UILabel *label,*label1;
-     IBOutlet UISlider *slider;
+     IBOutlet UISlider *slider,*slider1;
     UITextView *ex3c2,*ex3c3,*ex3c4,*ex3c5;
     UITextField *ex3c1;
     UILabel *slabel1,*slabel2;
     sqlite3 *exerciseDB;
        NSString        *databasePath;
     BeteendeDateList *bdl;
+     IBOutlet UIScrollView *scroll;
 }
 @property(nonatomic, retain)IBOutlet UILabel *label;
 @property(nonatomic, retain)IBOutlet UILabel *label1;
@@ -37,6 +38,6 @@
 -(IBAction)saveButton:(id)sender;
 -(IBAction)newButton:(id)sender;
 -(IBAction)nextButton:(id)sender;
-
+-(IBAction)mainlabelalert:(id)sender;
    - (IBAction)showCalendar:(id)sender;
 @end
