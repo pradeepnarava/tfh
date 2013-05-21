@@ -771,7 +771,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+<<<<<<< HEAD
 						<string key="label">label1</string>
+=======
+						<string key="label">slider1</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="533032395"/>
+					</object>
+					<int key="connectionID">333</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">slider</string>
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="1033557189"/>
 					</object>
@@ -783,7 +795,11 @@
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="1063309764"/>
 					</object>
+<<<<<<< HEAD
 					<int key="connectionID">317</int>
+=======
+					<int key="connectionID">334</int>
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1127,7 +1143,134 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
+<<<<<<< HEAD
 			<int key="maxID">531</int>
+=======
+			<int key="maxID">334</int>
+		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">BeteendeexperimentController</string>
+					<string key="superclassName">UIViewController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="changeSlider1:">id</string>
+						<string key="changeSlider:">id</string>
+						<string key="l1alert:">id</string>
+						<string key="mainlabelalert:">id</string>
+						<string key="newButton:">id</string>
+						<string key="nextButton:">id</string>
+						<string key="saveButton:">id</string>
+						<string key="showCalendar:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="changeSlider1:">
+							<string key="name">changeSlider1:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="changeSlider:">
+							<string key="name">changeSlider:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="l1alert:">
+							<string key="name">l1alert:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="mainlabelalert:">
+							<string key="name">mainlabelalert:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="newButton:">
+							<string key="name">newButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="nextButton:">
+							<string key="name">nextButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="saveButton:">
+							<string key="name">saveButton:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showCalendar:">
+							<string key="name">showCalendar:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="ex3c1">UITextField</string>
+						<string key="ex3c2">UITextView</string>
+						<string key="ex3c3">UITextView</string>
+						<string key="ex3c4">UITextView</string>
+						<string key="ex3c5">UITextView</string>
+						<string key="label">UILabel</string>
+						<string key="label1">UILabel</string>
+						<string key="slabel1">UILabel</string>
+						<string key="slabel2">UILabel</string>
+						<string key="slider">UISlider</string>
+						<string key="slider1">UISlider</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="ex3c1">
+							<string key="name">ex3c1</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ex3c2">
+							<string key="name">ex3c2</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ex3c3">
+							<string key="name">ex3c3</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ex3c4">
+							<string key="name">ex3c4</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="ex3c5">
+							<string key="name">ex3c5</string>
+							<string key="candidateClassName">UITextView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label">
+							<string key="name">label</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="label1">
+							<string key="name">label1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="slabel1">
+							<string key="name">slabel1</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="slabel2">
+							<string key="name">slabel2</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="slider">
+							<string key="name">slider</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="slider1">
+							<string key="name">slider1</string>
+							<string key="candidateClassName">UISlider</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/BeteendeexperimentController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSLayoutConstraint</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NSLayoutConstraint.h</string>
+					</object>
+				</object>
+			</array>
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

@@ -31,7 +31,9 @@
     
 }
 
-
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+}
 -(IBAction)oveningarbutton:(id)sender{
 //    NSString *strNibname;
 //    if (deviceIdiom == iPhone) {

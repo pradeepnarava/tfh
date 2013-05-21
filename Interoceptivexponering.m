@@ -81,10 +81,13 @@
     [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titlelabel1alert:)] autorelease];
     [titlelabel1 addGestureRecognizer:tapGesture2];
     
+<<<<<<< HEAD
     //egen.hidden=YES;
   //  slider.hidden=YES;
   //  prc.hidden=YES;
     
+=======
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
     NSString *docsDir;
     NSArray *dirPaths;
     
@@ -105,7 +108,11 @@
         if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
         {
             char *errMsg;
+<<<<<<< HEAD
             const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISE5 (ID INTEGER PRIMARY KEY AUTOINCREMENT, DATE TEXT,  NEGATIVE TEXT ,OVNINGAR TEXT,EGEN TEXT, ANGEST TEXT)";
+=======
+            const char *sql_stmt = "CREATE TABLE IF NOT EXISTS EXERCISE5 (ID INTEGER PRIMARY KEY AUTOINCREMENT,  OVNING TEXT ,EGEN TEXT,ANGEST TEXT)";
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
             
             if (sqlite3_exec(exerciseDB, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK)
             {
@@ -121,6 +128,11 @@
     
     [filemgr release];
     
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
    }
 
 
@@ -170,6 +182,7 @@
 }
 - (IBAction)closeBtn:(id)sender
 {
+<<<<<<< HEAD
     [cb1 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
     [cb2 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
     [cb3 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
@@ -180,6 +193,10 @@
     [cb8 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
     [cb9 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
     [cb10 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
+=======
+      [cb1 setImage:[UIImage imageNamed:@"uncheck.png"]  forState:UIControlStateNormal];
+   
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
     pupview.hidden=YES;
     [self.view bringSubviewToFront:timerview];
     timerview.hidden = NO;
@@ -201,12 +218,17 @@
 }
 - (IBAction)closetimer:(id)sender{
     timerview.hidden=YES;
+<<<<<<< HEAD
     //ovning.text=scb;
     egen.hidden=NO;
     slider.hidden=NO;
     prc.hidden=NO;
     text1.hidden=NO;
      text2.hidden=NO;
+=======
+    ovning.text=scb;
+   scb=NULL;
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
 }
 - (IBAction)starttimer:(id)sender{
     self.secondsTimer = [NSTimer
@@ -240,8 +262,7 @@
 }
 -(IBAction)selectedcheckbox:(id)sender{
     UIButton *btn = (UIButton *)sender;
-    
-    if (btn.tag == 1)
+     if (btn.tag == 1)
     {
         if(btn.currentImage==[UIImage imageNamed:@"uncheck.png"]){
             NSLog(@"%@",scb);
@@ -457,11 +478,15 @@
     // Using a cell identifier will allow your app to reuse cells as they come and go from the screen.
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
+<<<<<<< HEAD
     }
     NSUInteger row = [indexPath row];
     NSString *str=[NSString stringWithFormat:@"%@,%@",@"Övningar ",[listofovningars objectAtIndex:row]];
    cell.textLabel.font=[UIFont fontWithName:@"HelveticaNeue" size:12.0];
     cell.textLabel.text = str;
+=======
+    }     NSUInteger row = [indexPath row];
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
     // Deciding which data to put into this particular cell.
     // If it the first row, the data input will be "Data1" from the array.
        return cell;
@@ -535,6 +560,7 @@
 
 
 -(IBAction)newcolm:(id)sender{
+<<<<<<< HEAD
     if([ovning.text isEqualToString:@""] || [egen.text isEqualToString:@""] || [prc.text isEqualToString:@""] ){
         
     }else{
@@ -563,6 +589,52 @@
             
         }
     
+=======
+    [arr1 insertObject:ovning.text atIndex:noOfSection-1];
+         NSLog(@"%@",arr1);
+    [arr2 insertObject:egen.text atIndex:noOfSection-1];
+     NSLog(@"%@",arr2);
+     [arr3 insertObject:prc.text atIndex:noOfSection-1];
+      NSLog(@"%@",arr3);
+      noOfSection++;
+    NSLog(@"noof sections  %d",noOfSection);
+    [self.tblView reloadData];
+}
+-(IBAction)sparacolm:(id)sender{
+      NSLog(@"%@",arr1);
+     NSLog(@"%@",arr2);
+     NSLog(@"%@",arr3);
+    sqlite3_stmt    *statement;
+      const char *dbpath = [databasePath UTF8String];
+   
+        if (sqlite3_open(dbpath, &exerciseDB) == SQLITE_OK)
+            {
+                NSLog(@"%u",arr1.count);
+                for (int i=0; i<arr1.count; i++) {
+                    NSLog(@"%u",i);
+//                    if ([[arr1 objectAtIndex:i] isEqualToString:@""]) {
+//                        NSLog(@"nulllllll");
+//                    }else{
+                NSString *insertSQL = [NSString stringWithFormat: @"INSERT INTO EXERCISE5(ovning,egen,angest) VALUES (\"%@\", \"%@\", \"%@\" )", [arr1 objectAtIndex:i],[arr2 objectAtIndex:i],[arr3 objectAtIndex:i]];
+       
+                const char *insert_stmt = [insertSQL UTF8String];
+     
+               sqlite3_prepare_v2(exerciseDB, insert_stmt, -1, &statement, NULL);
+                 if (sqlite3_step(statement) == SQLITE_DONE)
+              {
+          
+            
+                   } else {
+                        NSLog(@"no");
+                }
+                   sqlite3_finalize(statement);
+                   sqlite3_close(exerciseDB);
+                      
+            }
+              //  }
+    }
+  
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
 }
 
 - (void)viewDidUnload{

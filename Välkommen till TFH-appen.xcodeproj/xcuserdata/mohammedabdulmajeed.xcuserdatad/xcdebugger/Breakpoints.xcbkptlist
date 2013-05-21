@@ -8,6 +8,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "BeteendeEditForm.m"
+<<<<<<< HEAD
          timestampString = "390652084.839627"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
@@ -22,6 +23,9 @@
          continueAfterRunningActions = "No"
          filePath = "Va&#776;lkommen till TFH-appen/Va_lkommenViewController.m"
          timestampString = "390732439.138312"
+=======
+         timestampString = "389627175.563479"
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "65"
@@ -94,6 +98,7 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
+<<<<<<< HEAD
          filePath = "AktivitetsplanenViewController.m"
          timestampString = "390831449.334296"
          startingColumnNumber = "9223372036854775807"
@@ -114,6 +119,15 @@
          startingLineNumber = "662"
          endingLineNumber = "662"
          landmarkName = "-SelectEvent:"
+=======
+         filePath = "ExerciseOneEditController.m"
+         timestampString = "389871730.902756"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "33"
+         endingLineNumber = "33"
+         landmarkName = "-viewDidLoad"
+>>>>>>> a106a5e4f02632ca38cbe7e130ab03ed2e9f198f
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

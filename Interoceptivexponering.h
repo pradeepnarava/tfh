@@ -44,6 +44,9 @@
 @property (nonatomic, strong) IBOutlet UILabel *minutesDisplay;
 @property (nonatomic, strong) NSTimer *secondsTimer;
 
+
+
+-(IBAction)sparacolm:(id)sender;
 -(IBAction)newcolm:(id)sender;
 - (IBAction)closeBtn:(id)sender;
 - (IBAction)closetimer:(id)sender;
